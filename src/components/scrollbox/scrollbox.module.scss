@@ -1,0 +1,30 @@
+@import '../../styles/varibles';
+
+.up {
+    width: 100%;
+    h1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 55px;
+        span {
+            color: $sg-orange;
+        }
+    }
+
+    p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 24px;
+        line-height: 1;
+        color: $sg-black-50;
+    }
+}
+
+.side {
+    width: 20rem;
+    height: 6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

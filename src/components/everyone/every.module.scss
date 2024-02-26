@@ -1,0 +1,52 @@
+@import '../../styles/varibles';
+
+.main{
+    margin:100px 85px;
+    .first{
+        margin-bottom: 40px;
+        justify-content: center;
+        text-align: center;
+        h2{
+            margin: 0;
+            font-size: 50px;
+            span{
+                color: $sg-orange;
+            }
+        }
+        h3{
+            margin: 0;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            color: $sg-black-50;
+        }
+    }
+    .second{
+        img{
+            max-width: 90%;
+            max-height: 90%;
+        }
+        h2{
+            margin-top: 32px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color:$sg-black;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+            color:$sg-black-50;
+        }
+        button{
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: $sg-orange;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    }
+}

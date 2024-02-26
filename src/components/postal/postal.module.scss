@@ -1,0 +1,58 @@
+@import '../../styles/varibles';
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
+    h1{
+        // display: flex;
+        // flex-direction: column;
+        font-family: $text-font;
+        font-size: 56px;
+        line-height: 64px;
+        margin: 10px 0 10px 0;
+        text-align: center;
+        span{
+            color: $sg-orange;
+        }
+    }
+    p{
+        font-family: $text-font;
+        color: $sg-black-50;
+        text-align: center;
+    }
+    .input{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 90%;
+        min-width: 38%;
+        flex-wrap: wrap;
+        gap:1rem;
+        .add{
+            border-radius: 100px;
+            // height: 47px;
+            width: 336px;
+            margin: 8px 0;
+            box-shadow: 0 0 8px rgba(229,112,3,.3), 0 0 12px rgba(229,112,3,.3), 0 0 18px rgba(229,112,3,.3), 0 0 24px rgba(229,112,3,.3);
+            border-color: $sg-orange;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 24px;
+        }
+        .btn{
+            font-size: 16px;
+            background: linear-gradient(135deg,#ff932e,#e57003);
+            color: $sg-white;
+            margin: 8px 0;
+            // height: 47px;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: none;
+        }
+    }
+}

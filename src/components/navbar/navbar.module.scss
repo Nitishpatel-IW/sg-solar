@@ -1,0 +1,51 @@
+@import '../../styles/varibles';
+
+
+
+.row {
+	// border:solid;
+	z-index: 3;
+	position: sticky;
+	top: 0;
+	height: 3rem;
+	width: 100%;
+	display: flex;
+	gap: 1;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color:$sg-bgColor;
+
+	.left img {
+		height: 28px;
+		background-color:transparent;
+	}
+
+	.rightContainer {
+
+		display: flex;
+		align-items: center;
+		// justify-content: space-between;
+		.right {
+			display: flex;
+			align-items: center;
+
+			.menu {
+				background-color: transparent;
+				margin: 0 12px;
+				border-bottom: none;
+			}
+		}
+
+		.btn {
+			display: flex;
+			align-items: center;
+			background: linear-gradient(135deg, #ff932e, #e57003);
+			color: $sg-white;
+			border-radius: 100px;
+			font-size: 14px;
+			padding: 0px 14px;
+			height: 32px;
+			border: none;
+		}
+	}
+}

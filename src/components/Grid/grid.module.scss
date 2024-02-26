@@ -1,0 +1,178 @@
+@import '../../styles/varibles';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+
+        span {
+            color: $sg-orange;
+        }
+    }
+
+    .subpara {
+        text-align: center;
+        color: $sg-black-50;
+        width: 41vw;
+    }
+
+    .mainRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .leftCol {
+            width: fit-content;
+            background-color: $sg-orange;
+            border-radius: 18px;
+            padding: 2rem;
+            color: $sg-white;
+            margin: 18px;
+
+            img {
+                object-fit: contain;
+            }
+
+            button {
+                background-color: #fcfaf6;
+                border-radius: 100px;
+                font-weight: 400;
+                font-size: 16px;
+                padding-bottom: 10px;
+                color: #fb8500;
+                border: none;
+            }
+        }
+
+        .rightCol {
+            object-fit: cover;
+
+            .subRow {
+
+                .cirCol {
+                    background-color: $sg-white;
+                    border-radius: 18px;
+                    margin: 10px;
+                    padding: 0.5rem;
+
+                    img {
+                        object-fit: contain;
+                    }
+
+                    h2 {
+                        color: #4d4a42;
+                    }
+
+                    p {
+                        color: $sg-black-50
+                    }
+                }
+
+                .payCol {
+                    background-color: $sg-white;
+                    border-radius: 18px;
+                    margin: 10px;
+                    padding: 0.5rem;
+
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 3rem;
+
+                        h2 {
+                            color: #4d4a42;
+                        }
+
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+
+                    p {
+                        color: $sg-black-50
+                    }
+
+                    button {
+                        font-size: 16px;
+                        background: linear-gradient(135deg, #ff932e, #e57003);
+                        color: $sg-white;
+                        margin: 6px 0;
+                        font-weight: 500;
+                        font-size: 16px;
+                        padding: 12px 24px;
+                        border-radius: 100px;
+                        border: none;
+                    }
+                }
+            }
+
+            .subRowtwo {
+                .thuCol {
+                    background-color: $sg-white;
+                    border-radius: 18px;
+                    margin: 10px;
+                    padding: 0.5rem;
+
+                    img {
+                        object-fit: contain;
+                    }
+
+                    h2 {
+                        color: #4d4a42;
+                    }
+
+                    p {
+                        color: $sg-black-50;
+                    }
+                }
+
+                .ticCol {
+                    background-color: $sg-white;
+                    border-radius: 18px;
+                    margin: 10px;
+                    padding: 0.5rem;
+
+                    h2 {
+                        padding-right: 25px;
+                        color: #4d4a42;
+                    }
+
+                    .outer {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .divone {
+                            .subdivone {
+                                display: flex;
+                            }
+
+                            .subdivtwo {
+                                display: flex;
+                            }
+                        }
+
+                        .divtwo {
+                            .subone {
+                                display: flex;
+                            }
+
+                            .subtwo {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.tick {
+    object-fit: contain;
+}

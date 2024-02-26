@@ -1,0 +1,35 @@
+@import '../../styles/varibles' ;
+
+.main{
+    margin-top: 70px;
+    // background-color: $sg-bgColor;
+    padding-bottom: 20px;
+    .first{
+        margin-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+        h2{
+            font-size: 28px;
+            span{
+                color:$sg-orange;
+            }
+        }
+        .btn{
+            width: fit-content;
+            padding: 15px 20px;
+            background-color: $sg-orange;
+            color: #fff;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    }
+    .second{
+        padding-top: 0px;
+    }
+}
+.line{ 
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
