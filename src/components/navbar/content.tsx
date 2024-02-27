@@ -1,6 +1,10 @@
+import { HashLink as Link} from 'react-router-hash-link';
 export const menuItems = [
     {
-        label: "How we Work",
+        label: (
+        <Link to="#howWework">
+            How we Work
+        </Link>),
         key: "work",
     },
     {
@@ -8,7 +12,11 @@ export const menuItems = [
         key: "learn",
         children: [
             {
-                label: "FAQ",
+                label: (
+                    <a href="/faq" target="_blank" rel="noopener noreferrer">
+                      FAQ
+                    </a>
+                  ),
                 key: "faq",
             },
             {

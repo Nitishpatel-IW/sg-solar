@@ -19,7 +19,7 @@ import { url } from 'inspector';
 export default function App() {
   return (
     <>
-      <div className={Styles.up}>
+      <div className={Styles.up} id='howWework'>
             <h1>
               {Top.head}
             </h1>

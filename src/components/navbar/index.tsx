@@ -3,18 +3,16 @@ import React, { useRef } from 'react';
 import Styles from './navbar.module.scss'
 import { Layout, Menu, Row, Col, Collapse } from 'antd';
 import { menuItems } from './content'
-// import { useState } from 'react';
-// import { Drawer, Button } from 'antd';
-// const { Header } = Layout;
-// import { FaBars, FaTimes } from "react-icons/fa";
 
-const index: React.FC = () => {
+const Navbar: React.FC = () => {
 
 	return (
 
 		<Row className={Styles.row}>
 			<Col className={Styles.left} span={4} >
-				<img src={Logo} />
+				<a href='#'>
+					<img src={Logo} />
+				</a>
 			</Col>
 			<Row className={Styles.rightContainer}>
 
@@ -63,5 +61,5 @@ const index: React.FC = () => {
 // 	);
 // };
 
-export default index;
+export default Navbar;
 
