@@ -1,0 +1,219 @@
+@import '../../../styles/varibles';
+
+.main {
+    .first{
+        padding-top: 2rem;
+        padding-bottom: 1.4rem;
+        background-color: $sg-orange;
+        .firstCol{
+            color: $sg-white;
+            line-height: 1rem;
+
+            h3{
+                font-size:2rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+        
+    }
+    .insta {
+        padding: 60px 0 60px 0;
+
+        .instacol {
+            height: fit-content;
+            padding: 0 3rem 0 3rem;
+            margin-top: 1rem;
+            border-radius: 1.4rem;
+            background-color: $sg-white;
+
+            .instadiv {
+
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
+                box-sizing: border-box;
+                margin: 2rem 0;
+
+                .imgdiv {
+
+                    width: 82px;
+
+                    img {
+
+                        width: 82px;
+                        height: 62px;
+                    }
+                }
+
+                .contentdiv {
+
+                    // width: ;
+                    h3 {
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-weight: 600;
+                        font-size: 14px;
+                        margin-top: 4px;
+                        color: $sg-black-75;
+                    }
+                }
+            }
+        }
+
+        .right {
+            padding-left: 1rem;
+
+            h3 {
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 55px;
+                margin-top: 0;
+                margin-bottom: 1rem;
+
+                span {
+                    color: $sg-orange;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 1rem;
+                color: $sg-black-50;
+                font-weight: 500;
+                font-size: 16px;
+
+                li {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+
+    .market {
+        .upCol {
+            .upColRow {
+                align-items: end;
+
+                .upColcontent {
+                    h3 {
+                        font-weight: 600;
+                        font-size: 38px;
+                        line-height: 45px;
+                        margin-top: 0;
+                        margin-bottom: 1rem;
+
+                        span {
+                            color: $sg-orange;
+                        }
+                    }
+
+                    p {
+                        color: $sg-black-50;
+                        font-weight: 450;
+                        font-size: 17px;
+                        line-height: 160%;
+                    }
+                }
+
+                .upColbtn {
+                    display: flex;
+                    padding-bottom: 2rem;
+                    justify-content: end;
+
+                    button {
+                        font-size: 16px;
+                        background: linear-gradient(135deg, #ff932e, #e57003);
+                        color: $sg-white;
+                        margin: 6px 0;
+                        font-weight: 700;
+                        font-size: 16px;
+                        padding: 12px 24px;
+                        border-radius: 100px;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .downCol {
+
+            .downRow {
+                padding: 1.5rem 0;
+                display: flex;
+                gap: 1rem;
+
+                .boxCol {
+                    background-color: $sg-white;
+                    padding: 1.8rem;
+                    border-radius: 1.2rem;
+
+                    img {
+                        height: 3.5rem;
+                        width: 3.5rem;
+                    }
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .meet {
+        display: flex;
+        gap: 3.5rem;
+        margin: 4rem 0;
+        .meetCol {
+            .padCol {
+
+                padding-right: 1.5rem;
+                h3 {
+                    font-weight: 600;
+                    font-size: 38px;
+                    line-height: 55px;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+
+                    span {
+                        color: $sg-orange;
+                    }
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 1rem;
+                    color: $sg-black-50;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 0.8rem;
+                    li {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .meetCol2{
+            padding-left:0.3rem;
+        }
+    }
+
+}

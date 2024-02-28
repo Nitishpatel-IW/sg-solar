@@ -1,35 +1,109 @@
-@import '../../styles/varibles' ;
+@import '../../styles/varibles';
 
-.main{
-    margin-top: 70px;
+.main {
+    margin-top: 6rem;
     // background-color: $sg-bgColor;
     padding-bottom: 20px;
-    .first{
+    background-image: url('../../assets/ringfooter.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    
+    background-size: contain;
+    
+
+    .first {
         margin-bottom: 50px;
-        justify-content: center;
-        text-align: center;
-        h2{
-            font-size: 28px;
-            span{
-                color:$sg-orange;
+
+        .firstCol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                max-width: 942px;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 55px;
+                text-align: center;
+
+                span {
+                    color: $sg-orange;
+                }
+            }
+
+            .btn {
+                width: fit-content;
+                padding: 15px 20px;
+                background-color: $sg-orange;
+                color: #fff;
+                border: none;
+                border-radius: 100px;
+                cursor: pointer;
             }
         }
-        .btn{
-            width: fit-content;
-            padding: 15px 20px;
-            background-color: $sg-orange;
-            color: #fff;
-            border: none;
-            border-radius: 100px;
-            cursor: pointer;
+    }
+
+    .second {
+        padding-top: 0px;
+        padding-top: 3rem;
+
+        .secondOne {
+            img {
+                width: 120px;
+                height: 28px;
+            }
+
+            p {
+                margin: 0;
+                padding-top: 10px;
+                font-weight: 600;
+                font-size: 0.7rem;
+                color: $sg-black-50;
+            }
+
+            .contact {
+                display: flex;
+
+                img {
+                    padding: 1rem 0;
+                    padding-right: 1.5rem;
+                    height: 1rem;
+                    width: 1rem;
+                }
+            }
+        }
+
+        .secondTwo {
+            line-height: 0.5rem;
+
+            h3 {
+                font-weight: 600;
+                font-size: 0.85rem;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 0.6rem;
+            }
         }
     }
-    .second{
-        padding-top: 0px;
+
+    .lineRow {
+
+        .line {
+            border: 1px solid rgba(218, 218, 247, 0.578);
+        }
     }
-}
-.line{ 
-    width: 85%;
-    margin: 0 auto;
-    border: 1px solid gray;
+
+    .btmRow {
+        margin-top: 1rem;
+        font-size: 14px;
+        font-weight: 500;
+        color: $sg-black-50;
+
+        .btmCR {
+            font-weight: 400;
+        }
+    }
+
 }

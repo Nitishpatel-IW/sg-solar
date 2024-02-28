@@ -1,0 +1,45 @@
+@import '../../styles/varibles';
+
+.main {
+    .first{
+        padding-top: 2rem;
+        padding-bottom: 1.4rem;
+        background-color: $sg-blue;
+        .firstCol{
+            color: $sg-white;
+            line-height: 1.4rem;
+
+            h3{
+                font-size:2rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+            .input{
+                padding: 2rem 0;
+                .inputfield{
+                    border: 2px solid $sg-white;
+                    background-color: $sg-blue;
+                    color: $sg-white;
+                    padding-left: 1.2rem;
+                    height:3rem;
+                    width: 20rem;
+                    border-radius: 8rem;
+
+                    ::placeholder{
+                        color:$sg-white;
+                    }
+                }
+            }
+        }
+        
+    }
+}    
+
+
+.leftCol{
+    height: dvh;
+    position: sticky;
+}
