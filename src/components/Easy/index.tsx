@@ -5,7 +5,7 @@ import Img1 from '../../assets/easy1.jpg'
 import Img2 from '../../assets/easy2.jpg'
 const Easy = () => {
     return (
-        <div className={Styles.main}>
+        <div className={Styles.main} id='easy'>
             <Row className={Styles.first}>
                 <Col span={4} offset={1}>
                     <h2>Solar on

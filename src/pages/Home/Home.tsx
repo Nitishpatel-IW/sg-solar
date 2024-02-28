@@ -11,7 +11,7 @@ import Expert from '../../components/expert/index'
 import Ref from '../../components/referral/index'
 import Confident from '../../components/confident/index'
 import Faq from '../../components/FAQ/index'
-import Foot from '../../components/footer/index'
+// import Foot from '../../components/footer/index'
 import Eff from '../../components/Efficiency/index'
 import Every from '../../components/everyone/index'
 import Easy from '../../components/Easy/index'
@@ -45,7 +45,6 @@ const Home = () => {
             <Eff />
             <Confident />
             <Faq />
-            <Foot />
         </div>
     )
 }

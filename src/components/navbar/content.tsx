@@ -1,10 +1,12 @@
-import { HashLink as Link} from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 export const menuItems = [
     {
         label: (
-        <Link to="#howWework">
-            How we Work
-        </Link>),
+            <Link to="/#howWework">
+                How we Work
+            </Link>
+            ),
         key: "work",
     },
     {
@@ -13,14 +15,18 @@ export const menuItems = [
         children: [
             {
                 label: (
-                    <a href="/faq" target="_blank" rel="noopener noreferrer">
-                      FAQ
-                    </a>
-                  ),
+                    <NavLink to="/faq"  rel="noopener noreferrer">
+                        FAQ
+                    </NavLink>
+                ),
                 key: "faq",
             },
             {
-                label: "Articles",
+                label: (
+                    <Link to="/#confident">
+                        Articles
+                    </Link>
+                    ),
                 key: "articles",
             }
         ],
@@ -30,7 +36,9 @@ export const menuItems = [
         key: "partner",
         children: [
             {
-                label: "For solar installers",
+                label: (<NavLink to='/partner' >
+                    For solar installers
+                </NavLink>),
                 key: "installer",
             }
         ],
@@ -40,11 +48,19 @@ export const menuItems = [
         key: "aboutus",
         children: [
             {
-                label: "SG solar Homes",
+                label: (
+                    <Link to="/#easy">
+                        SG solar Homes
+                    </Link>
+                ), 
                 key: "home",
             },
             {
-                label: "Our Projects",
+                label: (
+                    <Link to="#projects">
+                        Our Projects
+                    </Link>
+                ), 
                 key: "projects",
             }
         ],

@@ -17,7 +17,7 @@ import {Parallax,EffectFade, Mousewheel, Pagination } from 'swiper/modules';
 export default function App() {
   return (
     <>
-      <div className={Styles.up}>
+      <div className={Styles.up} id='projects'>
             <h1>
               {Top.head}
             </h1>

@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Styles from './navbar.module.scss'
 import { Layout, Menu, Row, Col, Collapse } from 'antd';
 import { menuItems } from './content'
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
 
@@ -10,9 +11,9 @@ const Navbar: React.FC = () => {
 
 		<Row className={Styles.row}>
 			<Col className={Styles.left} span={4} >
-				<a href='#'>
+				<Link to='/'>
 					<img src={Logo} />
-				</a>
+				</Link>
 			</Col>
 			<Row className={Styles.rightContainer}>
 
