@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styles from './pageFaq.module.scss'
 import { Col, Row, Input } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
-
+import Add from '../../assets/faqadd.jpg'
+import Sub from '../../assets/faqminus.jpg'
+import { Topic } from './content'
 const Pagefaq = () => {
+    const [selected, setSelected] = useState(-1)
+    const toggle = (i: number) => {
+        if (selected == i) {
+            return setSelected(-1)
+        }
+        setSelected(i)
+    }
+
     return (
         <div className={Styles.main}>
             <Row className={Styles.first} justify={'center'}>
@@ -26,8 +36,26 @@ const Pagefaq = () => {
                             <h3>Referral</h3>
                             <h3>Renewable Energy Certificates</h3>
                         </Col>
-                        <Col span={18}>
-                            
+                        <Col span={18} className={Styles.rightCol}>
+                            <div className={Styles.wrapper}>
+                                <div className={Styles.accordian}>
+                                    {Topic.map((t) => (
+
+                                        <div key={t.key}>
+                                            <h3>{t.head}</h3>
+                                            {t.faq.map((item, i) => (
+                                                <div className={Styles.item} key={i}>
+                                                    <div className={Styles.title} onClick={() => toggle(i)}>
+                                                        <span>{selected === i ? <img src={Sub} className={Styles.imgsec} /> : <img src={Add} className={Styles.imgsec} />}</span>
+                                                        <p>{item.question}</p>
+                                                    </div>
+                                                    <div className={Styles[selected === i ? 'showContent' : 'content']}>{item.answer}</div>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Col>
