@@ -9,7 +9,7 @@ const Faq: React.FC = () => {
         <div className={Styles.main}>
             <Row className={Styles.meet} align={'middle'} justify={'center'}>
                 <Col className={Styles.meetCol} span={18}>
-                    <Row justify={'space-between'} align={'middle'}>
+                    <Row justify={'space-between'} align={'top'}>
                         <Col span={10} className={Styles.padCol}>
                             <h3 className={Styles.head1} >{data.head1}</h3>
                             <h3 className={Styles.head2}>
@@ -28,7 +28,7 @@ const Faq: React.FC = () => {
                             </div>
                         </Col>
                         <Col className={Styles.meetCol2} span={12}>
-
+                            <Accordian/>
                         </Col>
                     </Row>
                 </Col>

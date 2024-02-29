@@ -8,8 +8,6 @@
 
         .meetCol {
             .padCol {
-                padding-right: 1.5rem;
-
                 .head1 {
                     font-weight: 700;
                     font-size: 16px;
@@ -35,16 +33,18 @@
 
                 p {
                     margin-bottom: 40px;
-                    font-size: 1rem;
+                    font-weight: 400;
+                    font-size: 0.9rem;
                     color: #666;
                     line-height: 1.3;
                 }
 
                 .filled {
                     display: flex;
-                    margin-top: 50px;
+                    margin-top: 2rem;
                     column-gap: 20px;
                     height: 2.5rem;
+
                     .btn {
                         font-size: 15px;
                         background: linear-gradient(135deg, #ff932e, #e57003);
@@ -54,13 +54,15 @@
                         border-radius: 100px;
                         border: none;
                     }
-                    img{
+
+                    img {
                         width: 0.7rem;
                         height: 100%;
                         object-fit: contain;
                     }
-                    p{
-                        margin:0 0 0 0.4rem;
+
+                    p {
+                        margin: 0 0 0 0.4rem;
                         font-weight: 500;
                         color: $sg-black-75;
                         font-size: 14px;
@@ -71,62 +73,51 @@
         }
 
         .meetCol2 {
-            padding-left: 0.3rem;
-            
-        }
-    }
-}
+            .wrapper {
+                .accordian {
+                    margin-top: 2rem;
+                    .item {
+                        border-radius: 18px;
+                        background: $sg-white;
+                        margin-bottom: 20px;
+                        padding: 5px 15px;
+                        overflow: hidden;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                    }
 
-.firstRight {
-    width: 30%;
+                    .title {
+                        font-weight: 530;
+                        white-space: nowrap;
+                        font-family: sans-serif;
+                        font-size: 1rem;
+                        color: #4D4A42;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        cursor: pointer;
 
-    .wrapper {
-        display: flex;
-        height: 100%;
-        width: fit-content;
-        justify-content: center;
-        align-items: center;
+                        .imgsec{
+                            width: 1.7rem;
+                            height: 100%;
+                        }
+                    }
 
-        .accordian {
-            width: 650px;
+                    .content {
+                        font-size: 16px;
+                        color: $sg-black-50;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.7s ease;
+                    }
 
-            .item {
-                border-radius: 18px;
-                background: $sg-white;
-                margin-bottom: 5px;
-                margin-bottom: 20px;
-                padding: 5px 10px;
-                overflow: hidden;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
-            .title {
-                font-weight: 530;
-                white-space: nowrap;
-                font-family: sans-serif;
-                font-size: 16px;
-                color: #4D4A42;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                cursor: pointer;
-            }
-
-            .content {
-                font-size: 14px;
-                color: $sg-black-50;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.1s ease-out;
-            }
-
-            .showContent {
-                max-height: 1000px;
-                font-size: 16px;
-                color: $sg-black-50;
-                transition: max-height 1.4s ease-in;
+                    .showContent {
+                        max-height: 1000px;
+                        font-size: 16px;
+                        color: $sg-black-50;
+                        transition: max-height 1s ease;
+                    }
+                }
             }
         }
     }
-
 }
