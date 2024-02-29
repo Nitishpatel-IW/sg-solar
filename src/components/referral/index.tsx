@@ -5,23 +5,26 @@ import { Row, Col } from 'antd'
 const referral: React.FC = () => {
   return (
     <div className={Styles.main}>
-      <Row className={Styles.inner} align={'middle'} >
-        <Col className={Styles.left} span={9} offset={2}>
 
-          <h3 >SOL REFERRAL</h3>
-          <h1>
-            Empower your
-            network, Empower
-            your wallet
+      <Row className={Styles.meet} align={'middle'} justify={'center'}>
+        <Col className={Styles.meetCol} span={18}>
+          <Row justify={'space-between'} align={'middle'}>
+            <Col span={10} className={Styles.padCol}>
+              <h3 className={Styles.head1} >SOL REFERRAL</h3>
+              <h3 className={Styles.head2}>
+                Empower your
+                network, Empower
+                your wallet
 
-          </h1>
-          <p>
-          As a member of SG Solar Home community, you have the opportunity to earn extra income by simply referring others to our services.
-          </p>
-
-        </Col>
-        <Col span={11} >
-          <img className={Styles.img} src={Img} alt="img" />
+              </h3>
+              <p>
+              As a member of SG Solar Home community, you have the opportunity to earn extra income by simply referring others to our services.
+              </p>
+            </Col>
+            <Col className={Styles.meetCol2} span={12}>
+              <img src={Img} />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </div>

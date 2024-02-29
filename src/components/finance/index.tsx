@@ -1,29 +1,34 @@
 import React from 'react'
-import Img from '../../assets/Maskgroup1.jpg'
-import {Row,Col} from 'antd'
+
+import { Row, Col } from 'antd'
 import Styles from './finance.module.scss'
+import { data } from './content';
 
 const Finance: React.FC = () => {
     return (
         <div className={Styles.main}>
-            <Row className={Styles.inner} align={'middle'} >
-                <Col className={Styles.left} span={9} offset={2}>
 
-                    <h3 >SOL EXPERT</h3>
-                    <h1>
-                        <span>Optimise</span> your solar design & Installation using <span>SOL Expert</span>
-                    </h1>
-                    <p>
-                        On our platform, you can consult with our in-house solar experts when you receive your initial solar design. Our experts can help answer any questions you may have about solar design, installation, vendor comparison, and service improvements.
-                    </p>
-                    <div className={Styles.filled}>
-                        <button className={Styles.btn}>Get started</button>
-                    </div>
+            <Row className={Styles.meet} align={'middle'} justify={'center'}>
+                <Col className={Styles.meetCol} span={18}>
+                    <Row justify={'space-between'} align={'middle'}>
+                        <Col span={10} className={Styles.padCol}>
+                            <h3 className={Styles.head1} >{data.head1}</h3>
+                            <h3 className={Styles.head2}>
+                                Own solar panels starting
+                                from <span>SGD 65 / month</span> ,
+                                with no upfront fees
+                            </h3>
+                            <p>
+                               {data.para}
+                            </p>
+                            <button className={Styles.btn}>{data.btn}</button>
+                        </Col>
+                        <Col className={Styles.meetCol2} span={12}>
+                            <img src={data.img} />
+                        </Col>
+                    </Row>
+                </Col>
 
-                </Col>
-                <Col  span={11} >
-                    <img className={Styles.img} src={Img} alt="girl"/>
-                </Col>
             </Row>
         </div>
     );

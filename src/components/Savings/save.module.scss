@@ -1,67 +1,61 @@
 @import '../../styles/varibles';
 
 .main {
-    .inner {
-        margin: 65px 0px;
+    .meet {
         display: flex;
-        column-gap: 60px;
+        gap: 3.5rem;
+        margin: 4rem 0;
 
-        .left {
-            h3 {
-                font-weight: 800;
-                font-size: 16px;
-                letter-spacing: .11em;
-                padding: 10px 16px;
-                background: rgba(96, 170, 240, .05);
-                border-radius: 100px;
-                color: #60aaf0;
-                width: fit-content;
-            }
+        .meetCol {
+            .padCol {
+                padding-right: 1.5rem;
 
-            h1 {
-                font-size: 36px;
-                color: #333;
-                width: 70%;
-
-                span {
-                    color: $sg-orange;
+                .head1 {
+                    font-weight: 700;
+                    font-size: 16px;
+                    letter-spacing: .11em;
+                    padding: 10px 16px;
+                    background: rgba(96, 170, 240, .05);
+                    border-radius: 100px;
+                    color: #60aaf0;
+                    width: fit-content;
                 }
-            }
 
-            p {
-                font-size: 16px;
-                color: #666;
-                line-height: 1.5;
-            }
+                .head2 {
+                    font-weight: 600;
+                    font-size: 38px;
+                    line-height: 55px;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
 
-            .add {
-                border-radius: 100px;
-                // height: 47px;
-                width: 336px;
-                margin: 6px 0;
-                box-shadow: 0 0 8px rgba(229, 112, 3, .3), 0 0 12px rgba(229, 112, 3, .3), 0 0 18px rgba(229, 112, 3, .3), 0 0 24px rgba(229, 112, 3, .3);
-                border-color: $sg-orange;
-                font-weight: 700;
-                font-size: 16px;
-                padding: 12px 24px;
-            }
+                    span {
+                        color: $sg-orange;
+                    }
+                }
 
-            .btn {
-                font-size: 16px;
-                background: linear-gradient(135deg, #ff932e, #e57003);
-                color: $sg-white;
-                margin: 6px 0;
-                font-weight: 700;
-                font-size: 16px;
-                padding: 12px 24px;
-                border-radius: 100px;
-                border: none;
+                p {
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                    color: #666;
+                    line-height: 1.5;
+                }
+
+                .btn {
+                    background: linear-gradient(135deg, #ff932e, #e57003);
+                    color: $sg-white;
+                    padding: 10px 15px;
+                    border: none;
+                    border-radius: 100px;
+                }
             }
         }
 
-        .img {
-            width: 90%;
-            height: 100%;
+        .meetCol2 {
+            padding-left: 0.3rem;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
         }
     }
 }
