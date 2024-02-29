@@ -40,9 +40,8 @@ const Pagefaq = () => {
                             <div className={Styles.wrapper}>
                                 <div className={Styles.accordian}>
                                     {Topic.map((t) => (
-
                                         <div key={t.key}>
-                                            <h3>{t.head}</h3>
+                                            <h3 className={Styles.general}>{t.head}</h3>
                                             {t.faq.map((item, i) => (
                                                 <div className={Styles.item} key={i}>
                                                     <div className={Styles.title} onClick={() => toggle(i)}>
