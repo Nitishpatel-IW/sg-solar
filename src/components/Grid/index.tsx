@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styles from './grid.module.scss'
 import { Card, Col, Row, Button } from 'antd';
 import { cirle, payment, police, thumb, tick } from './gridData'
+import PolicePopup from '../popup/police'
+import FinancePopup from '../popup/finance'
+
+
+
 const SolarInfo: React.FC = () => {
+
+
+  const [showPolice, setShowPolice] = useState(false);
+  const ClosePolice = (): void => {
+    return setShowPolice(false);
+  }
+  const [showFinance, setShowFinance] = useState(false);
+  const CloseFinance = (): void => {
+    return setShowFinance(false);
+  }
+
+
   return (
     <div className={Styles.main}>
       <h1>100% <span>Confidence</span> in solar, now!</h1>
@@ -15,9 +32,9 @@ const SolarInfo: React.FC = () => {
           <h3>{police.subhead}</h3>
           <p>{police.para}</p>
           <p>{police.tc}</p>
-          <Button>Learn more</Button>
+          <Button className={Styles.polBtn} onClick={() => setShowPolice(true)}>Learn more</Button>
         </Col>
-        <Col className={Styles.rightCol} span={13}>
+        <Col className={Styles.rightCol} span={12}>
           <Row className={Styles.subRow}>
             <Col className={Styles.cirCol} span={11}>
               <img src={cirle.img} />
@@ -31,7 +48,7 @@ const SolarInfo: React.FC = () => {
                 <img src={payment.img} />
               </div>
               <p>{payment.para}</p>
-              <button>Learn more</button>
+              <button onClick={()=>setShowFinance(true)} >Learn more</button>
             </Col>
           </Row >
           <Row className={Styles.subRowtwo}>
@@ -43,32 +60,36 @@ const SolarInfo: React.FC = () => {
             <Col className={Styles.ticCol} span={11}>
               <h2>{tick.head}</h2>
               <div className={Styles.outer}>
+
                 <div className={Styles.divone}>
                   <div className={Styles.subdivone}>
                     <img className={Styles.tick} src={tick.img} alt="" />
                     <p>Experience</p>
                   </div>
-                  <div className={Styles.subdivtwo}>
+                  <div className={Styles.subdivone}>
                     <img className={Styles.tick} src={tick.img} alt="" />
                     <p>Reputation</p>
-                    
                   </div>
                 </div>
-                <div className={Styles.divtwo}>
-                  <div className={Styles.subone}>
+
+                <div className={Styles.divone}>
+                  <div className={Styles.subdivone}>
                     <img className={Styles.tick} src={tick.img} alt="" />
                     <p>Quality & Service</p>
                   </div>
-                  <div className={Styles.subtwo}>
+                  <div className={Styles.subdivone}>
                     <img className={Styles.tick} src={tick.img} alt="" />
                     <p>Certification</p>
                   </div>
                 </div>
+
               </div>
             </Col>
           </Row>
         </Col>
       </Row>
+      {showPolice && <PolicePopup closeModel={ClosePolice} />}
+      {showFinance && <FinancePopup closeModel={CloseFinance} />}
     </div>
   );
 };

@@ -1,82 +1,123 @@
+import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
-export const menuItems = [
+import { DownOutlined, UpOutlined } from '@ant-design/icons';
+import EnglishFlag from '../../assets/eng-flag.48437074.jpg';
+import BurmeseFlag from '../../assets/mymar.jpg';
+
+interface MenuItem {
+    key: string;
+    label: JSX.Element;
+    children?: MenuItem[];
+  }
+  
+  export const menuItems: MenuItem[] = [
     {
-        label: (
-            <Link to="/#howWework">
-                How we Work
+      key: "work",
+      label: (
+        <Link to="/#howWework" style={{ color: 'black', textDecoration: 'none' }}>
+          How we Work
+        </Link>
+      ),
+    },
+    {
+      key: "learn",
+      label: (
+        <div>
+          Learn about Solar <DownOutlined style={{ fontSize: '0.6rem' }} />
+        </div>
+      ),
+      children: [
+        {
+          key: "faq",
+          label: (
+            <NavLink to="/faq" rel="noopener noreferrer">
+              FAQ
+            </NavLink>
+          ),
+        },
+        {
+          key: "articles",
+          label: (
+            <Link to="/#confident">
+              Articles
             </Link>
-            ),
-        key: "work",
+          ),
+        }
+      ],
     },
     {
-        label: "Learn about Solar",
-        key: "learn",
-        children: [
-            {
-                label: (
-                    <NavLink to="/faq"  rel="noopener noreferrer">
-                        FAQ
-                    </NavLink>
-                ),
-                key: "faq",
-            },
-            {
-                label: (
-                    <Link to="/#confident">
-                        Articles
-                    </Link>
-                    ),
-                key: "articles",
-            }
-        ],
+      key: "partner",
+      label: (
+        <div>
+          Become our Partner <DownOutlined style={{ fontSize: '0.6rem' }} />
+        </div>
+      ),
+      children: [
+        {
+          key: "installer",
+          label: (
+            <NavLink to='/partner' >
+              For solar installers
+            </NavLink>
+          ),
+        }
+      ],
     },
     {
-        label: "Become our Partner",
-        key: "partner",
-        children: [
-            {
-                label: (<NavLink to='/partner' >
-                    For solar installers
-                </NavLink>),
-                key: "installer",
-            }
-        ],
+      key: "aboutus",
+      label: (
+        <div>
+          About us <DownOutlined style={{ fontSize: '0.6rem' }} />
+        </div>
+      ),
+      children: [
+        {
+          key: "home",
+          label: (
+            <Link to="/#easy">
+              SG solar Homes
+            </Link>
+          ),
+        },
+        {
+          key: "projects",
+          label: (
+            <Link to="#projects">
+              Our Projects
+            </Link>
+          ),
+        }
+      ],
     },
     {
-        label: "About us",
-        key: "aboutus",
-        children: [
-            {
-                label: (
-                    <Link to="/#easy">
-                        SG solar Homes
-                    </Link>
-                ), 
-                key: "home",
-            },
-            {
-                label: (
-                    <Link to="#projects">
-                        Our Projects
-                    </Link>
-                ), 
-                key: "projects",
-            }
-        ],
+      key: "lang",
+      label: (
+        <div>
+          <img src={EnglishFlag} alt="English Flag" style={{ marginRight: '4px', width: '0.6rem', height: '0.6rem' }} />
+          English <DownOutlined style={{ fontSize: '0.6rem' }} />
+        </div>
+      ),
+      children: [
+        {
+          key: "english",
+          label: (
+            <div>
+              <img src={EnglishFlag} alt="English Flag" style={{ marginRight: '4px', width: '0.6rem', height: '0.6rem' }} />
+              English
+            </div>
+          ),
+        },
+        {
+          key: "burmese",
+          label: (
+            <div >
+              <img src={BurmeseFlag} alt="Burmese Flag" style={{ marginRight: '4px', width: '0.6rem', height: '0.6rem' }} />
+              Burmese
+            </div>
+          ),
+        }
+      ],
     },
-    {
-        label: "English",
-        key: "lang",
-        children: [
-            {
-                label: "English",
-                key: "english",
-            },
-            {
-                label: "Burmese",
-                key: "burmese",
-            }
-        ],
-    },
-]
+  ];
+  

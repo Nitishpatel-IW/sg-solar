@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Styles from './compare.module.scss'
 import { Row, Col } from 'antd'
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
-
+import VendorPopup from '../popup/vendors'
 import { data } from './content';
 
 
 const Compare = () => {
+
+    const [showPopup,setShowPopup]= useState(false);
+
+    const closePop =()=>{
+        return(
+            setShowPopup(false)
+        )}
+
     return (
         <div className={Styles.main}>
             <Row className={Styles.meet} align={'middle'} justify={'center'}>
@@ -21,7 +29,7 @@ const Compare = () => {
                             <p>
                                {data.para}
                             </p>
-                            <button className={Styles.btn}>{data.btn}</button>
+                            <button className={Styles.btn} onClick={()=>setShowPopup(true)}>{data.btn}</button>
                         </Col>
                         <Col className={Styles.meetCol2} span={12}>
                             <img src={data.img} />
@@ -29,6 +37,7 @@ const Compare = () => {
                     </Row>
                 </Col>
             </Row>
+            {showPopup && <VendorPopup closeModel={closePop}/>}
         </div>
     )
 }

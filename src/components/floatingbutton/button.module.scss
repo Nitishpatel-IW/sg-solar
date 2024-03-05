@@ -1,0 +1,48 @@
+@import '../../styles/varibles';
+.floatingSquaresContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.floatingSquare {
+  position: relative; /* Add position relative */
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $sg-orange;
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+
+.floatingSquare:hover {
+  transform: translateX(-120px); /* Expand on hover */
+}
+
+.calendarIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 60px; /* Adjust this value as needed */
+  transform: translateY(-50%);
+  background-color:$sg-orange;
+  font-size: 12px;
+  padding: 0.6rem 1rem;
+  color: $sg-white;
+  display: none; /* Initially hide the message */
+}
+
+.floatingSquare:hover .message {
+  display: block; /* Show message on hover */
+}

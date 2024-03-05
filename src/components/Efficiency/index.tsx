@@ -20,7 +20,6 @@ const Efficiency: React.FC = () => {
               <p>
                 {data.para}
               </p>
-              <button className={Styles.btn}>Learn More</button>
             </Col>
             <Col className={Styles.meetCol2} span={12}>
               <img className={Styles.img} src={Img1} />

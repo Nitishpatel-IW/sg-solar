@@ -1,66 +1,45 @@
-import Logo from '../../assets/logo.jpg'
-import React, { useRef } from 'react';
-import Styles from './navbar.module.scss'
-import { Layout, Menu, Row, Col, Collapse } from 'antd';
-import { menuItems } from './content'
+// Navbar.tsx
+import React from 'react';
+import Styles from './navbar.module.scss';
+import { Layout, Menu, Row, Col } from 'antd';
+import { menuItems } from './content';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/logo.jpg'
+import { DownOutlined } from '@ant-design/icons';
+interface NavbarProps {
+  backgroundColor?: string;
+  logoSrc?: string;
+  rightContainerFontColor?: string;
+  buttonColor?: string;
+  buttonFontColor?: string;
+}
 
-const Navbar: React.FC = () => {
-
-	return (
-
-		<Row className={Styles.row}>
-			<Col className={Styles.left} span={4} >
-				<Link to='/'>
-					<img src={Logo} />
-				</Link>
-			</Col>
-			<Row className={Styles.rightContainer}>
-
-				<Col className={Styles.right} span={20}>
-					<Menu className={Styles.menu} mode="horizontal" items={menuItems} border-bottom="none" ></Menu>
-				</Col>
-				<Col className={Styles.btnContainer} span={4}>
-					<button className={Styles.btn}>Get started</button>
-				</Col>
-			</Row>
-		</Row>
-	);
+const Navbar: React.FC<NavbarProps> = ({
+  backgroundColor,
+  logoSrc,
+  rightContainerFontColor,
+  buttonColor,
+  buttonFontColor,
+}) => {
+  return (
+    <Row justify={'center'} className={Styles.mainRow}>
+      <Col span={18} className={Styles.mainCol}>
+        <Row className={Styles.innerRow} justify={'space-between'}>
+          <Col span={6} className={Styles.logoSec}>
+            <Link to='/'>
+              <img src={Logo} className={Styles.img} />
+            </Link>
+          </Col>
+          <Col span={14} className={Styles.item}>
+            <Menu className={Styles.menu} mode="horizontal" items={menuItems} style={{ borderBottom: 'none', textDecoration: 'none', fontSize: '0.6rem', width: '100%', justifyContent: 'end' }} />
+          </Col>
+          <Col span={3} className={Styles.btnbox}>
+            <button className={Styles.btn}>Get started</button>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+  );
 };
 
-// const Index: React.FC = () => {
-//   const navRef = useRef<HTMLInputElement>();
-
-// 	const showNavbar = () => {
-//     if(navRef!=null){
-// 		//   navRef.current.classList.toggle(
-// 		// 	"responsive_nav"
-// 		// );
-//     }
-// 	};
-
-// 	return (
-// 		<header>
-// 			<h3>LOGO</h3>
-// 			{/* <nav ref={navRef}>
-// 				<a href="/#">Home</a>
-// 				<a href="/#">My work</a>
-// 				<a href="/#">Blog</a>
-// 				<a href="/#">About me</a>
-// 				<button
-// 					className="nav-btn nav-close-btn"
-// 					onClick={showNavbar}>
-// 					<FaTimes />
-// 				</button>
-// 			</nav> */}
-// 			<button
-// 				className="nav-btn"
-// 				onClick={showNavbar}>
-// 				<FaBars />
-// 			</button>
-// 		</header>
-// 	);
-// };
-
 export default Navbar;
-

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 export const content=[
 
     {
@@ -18,5 +20,9 @@ export const content=[
 export const data={
     head1:"FAQ​",
     para:"If you can't find the answer you're looking for, feel free to reach out to us and we'll be happy to help.",
-    btn:"Check out all our resources",
+    btn:(
+        <NavLink to='/faq' target='_blank' style={{color:"#fff"}}>
+            Check out all our resources
+        </NavLink>
+    ),
 }

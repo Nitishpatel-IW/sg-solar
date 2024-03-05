@@ -1,0 +1,158 @@
+@import '../../styles/varibles';
+
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.popMain {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    max-height: 85%;
+    width: 50vw;
+    overflow-y: auto;
+
+    .popX {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .popLogo {
+        width: 5rem;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .popHead {
+        width: fit-content;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 16px;
+        background-color: rgba(255, 147, 46, .05);
+        border-radius: 38px;
+        letter-spacing: .11em;
+        color: $sg-orange;
+    }
+
+    .popSubHead {
+        padding-top: 16px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #151206;
+        margin: 0;
+
+        span {
+            color: $sg-orange;
+        }
+    }
+
+    .popPara {
+        font-weight: 400;
+        font-size: 16px;
+        color: #85837d;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .popInput {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 1rem;
+
+        .popAdd {
+            border-radius: 100px;
+            width: 15rem;
+            margin: 8px 0;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 9px 24px;
+        }
+
+        .popBtn {
+            font-size: 16px;
+            background: linear-gradient(135deg, #ff932e, #e57003);
+            color: $sg-white;
+            margin: 8px 0;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: none;
+        }
+    }
+
+    .popImg1 {
+        width: 128px;
+        height: 176px;
+    }
+
+    .popImg2 {
+        width: 170px;
+        height: 238px;
+    }
+
+    .popImg3 {
+        width: 201px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .popPV {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .popSGD {
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        font-size: 12px;
+        color: $sg-black-50;
+    }
+}
+
+
+// Police popup
+
+ol {
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+
+    h3 {}
+    .list{
+        padding-left:20px;
+        li {
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+
+//Vendor Popup
+
+.sideImg{
+    width: 15rem;
+    height: 100%;
+    object-fit: contain;
+}

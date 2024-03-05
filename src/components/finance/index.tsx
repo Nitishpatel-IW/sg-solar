@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Row, Col } from 'antd'
 import Styles from './finance.module.scss'
 import { data } from './content';
-
+import FinancePopup from '../popup/finance'
 const Finance: React.FC = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const ClosePop =():void=>{
+        return setShowPopup(false);
+    }
     return (
         <div className={Styles.main}>
-
             <Row className={Styles.meet} align={'middle'} justify={'center'}>
                 <Col className={Styles.meetCol} span={18}>
                     <Row justify={'space-between'} align={'middle'}>
@@ -21,15 +25,15 @@ const Finance: React.FC = () => {
                             <p>
                                {data.para}
                             </p>
-                            <button className={Styles.btn}>{data.btn}</button>
+                            <button className={Styles.btn}  onClick={() => setShowPopup(true)} >{data.btn}</button>
                         </Col>
                         <Col className={Styles.meetCol2} span={12}>
                             <img src={data.img} />
                         </Col>
                     </Row>
                 </Col>
-
             </Row>
+            {showPopup && <FinancePopup closeModel={ClosePop}/>} 
         </div>
     );
 };

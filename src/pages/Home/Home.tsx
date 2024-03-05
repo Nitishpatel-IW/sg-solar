@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavBar from '../../components/navbar/index';
+import Navbar from '../../components/navbar/index';
 import Header from '../../components/header/index'
 import Postal from '../../components/postal/index'
 import Video from '../../components/youtube/index'
@@ -11,22 +11,34 @@ import Expert from '../../components/expert/index'
 import Ref from '../../components/referral/index'
 import Confident from '../../components/confident/index'
 import Faq from '../../components/FAQ/index'
-// import Foot from '../../components/footer/index'
-import Eff from '../../components/Efficiency/index'
+import Eff from '../../components/efficiency/index'
 import Every from '../../components/everyone/index'
-import Easy from '../../components/Easy/index'
-import Optimise from '../../components/Optimise/index'
-import Lowest from '../../components/Compare/index'
+import Easy from '../../components/easy/index'
+import Optimise from '../../components/optimise/index'
+import Lowest from '../../components/compare/index'
 import Save from '../../components/Savings/index'
-import Grid from '../../components/Grid/index'
+import Grid from '../../components/grid/index'
 import Scroll from '../../components/scrollbox/index'
 import Scroll2 from '../../components/scrollbox2/index'
-
+import Img from '../../assets/logo.jpg'
 const Home = () => {
+
+
+    const backgroundColor = '#fff8f5';
+    const logoSrc = '../../assets/logo.jpg';
+    const rightContainerFontColor = '#fff';
+    const buttonColor = '#FB8500';
+    const buttonFontColor = '#fff';
     return (
         <div>
             <Header />
-            <NavBar />
+            <Navbar 
+                backgroundColor={backgroundColor} 
+                logoSrc={logoSrc} 
+                rightContainerFontColor={rightContainerFontColor} 
+                buttonColor={buttonColor} 
+                buttonFontColor={buttonFontColor} 
+            />
             <Postal />
             <Video />
             <Carousal />
