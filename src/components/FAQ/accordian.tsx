@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Styles from './faq.module.scss'
+import styles from './faq.module.scss'
 import { content } from './questionsBank'
 import Add from '../../assets/add.jpg'
 import Sub from '../../assets/sub.jpg'
@@ -13,15 +13,15 @@ const Accordian = () => {
         setSelected(i)
     }
   return (
-    <div className={Styles.wrapper}>
-        <div className={Styles.accordian}>
+    <div className={styles.wrapper}>
+        <div className={styles.accordian}>
             {content.map((item,i)=>(
-                <div className={Styles.item}>
-                    <div className={Styles.title} onClick={()=> toggle(i)}>
+                <div className={styles.item}>
+                    <div className={styles.title} onClick={()=> toggle(i)}>
                         <p>{item.question}</p>
-                        <span>{selected===i?<img src={Sub} className={Styles.imgsec}/>:<img src={Add} className={Styles.imgsec}/>}</span>
+                        <span>{selected===i?<img src={Sub} className={styles.imgsec}/>:<img src={Add} className={styles.imgsec}/>}</span>
                     </div>
-                    <div className={Styles[selected===i?'showContent':'content']}>{item.answer}</div>
+                    <div className={styles[selected===i?'showContent':'content']}>{item.answer}</div>
                 </div>
             )
             )}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Data } from './data'
-import Styles from './slider.module.scss'
+import styles from './slider.module.scss'
 // import Slider from "react-slick";
 // import Left from '../../assets/arrowLeft.jpg'
 // import Right from '../../assets/arrowRight.jpg'
@@ -43,21 +43,21 @@ import Styles from './slider.module.scss'
 
 // const Customslider = () => {
 //   return (
-//     <div className={Styles.slidermain}>
-//       <div className={Styles.gin}>
+//     <div className={styles.slidermain}>
+//       <div className={styles.gin}>
 //           <Slider {...settings}>
 //             {Data.map((d) => (
-//               <div className={Styles.Cart}>
-//                 <div className={Styles.imgSec}>
-//                   <img className={Styles.img} src={d.img} alt='sliderImg' />
+//               <div className={styles.Cart}>
+//                 <div className={styles.imgSec}>
+//                   <img className={styles.img} src={d.img} alt='sliderImg' />
 //                 </div>
-//                 <div className={Styles.content}>
-//                   <div className={Styles.head}>
-//                     <div className={Styles.line}></div>
-//                     <p className={Styles.heading}>{d.h1}</p>
-//                     <p className={Styles.subhead}>{d.sub}</p>
+//                 <div className={styles.content}>
+//                   <div className={styles.head}>
+//                     <div className={styles.line}></div>
+//                     <p className={styles.heading}>{d.h1}</p>
+//                     <p className={styles.subhead}>{d.sub}</p>
 //                   </div>
-//                   <p className={Styles.para}>{d.h2}</p>
+//                   <p className={styles.para}>{d.h2}</p>
 //                 </div>
 //               </div>
 //             ))}
@@ -99,17 +99,17 @@ export default function App() {
       >
         {Data.map((d) => (
           <SwiperSlide>
-            <div className={Styles.Cart}>
-              <div className={Styles.imgSec}>
-                <img className={Styles.img3} src={d.img} alt='sliderImg' />
+            <div className={styles.Cart}>
+              <div className={styles.imgSec}>
+                <img className={styles.img3} src={d.img} alt='sliderImg' />
               </div>
-              <div className={Styles.content}>
-                <div className={Styles.head}>
-                  <div className={Styles.line}></div>
-                  <p className={Styles.heading}>{d.h1}</p>
-                  <p className={Styles.subhead}>{d.sub}</p>
+              <div className={styles.content}>
+                <div className={styles.head}>
+                  <div className={styles.line}></div>
+                  <p className={styles.heading}>{d.h1}</p>
+                  <p className={styles.subhead}>{d.sub}</p>
                 </div>
-                <p className={Styles.para}>{d.h2}</p>
+                <p className={styles.para}>{d.h2}</p>
               </div>
             </div>
           </SwiperSlide>

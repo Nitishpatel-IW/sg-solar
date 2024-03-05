@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Img from '../../assets/youtube.jpg';
-import Styles from './youtube.module.scss';
+import styles from './youtube.module.scss';
 import { FaTimes } from 'react-icons/fa';
 
 const Index: React.FC = () => {
@@ -11,14 +11,14 @@ const Index: React.FC = () => {
   };
 
   return (
-    <div className={Styles.main}>
-      <img className={Styles.img} src={Img} onClick={togglePlayer} />
+    <div className={styles.main}>
+      <img className={styles.img} src={Img} onClick={togglePlayer} />
       {showPlayer && (
-        <div className={Styles.videoPopup}>
-          <div className={Styles.closeButton} onClick={togglePlayer}>
+        <div className={styles.videoPopup}>
+          <div className={styles.closeButton} onClick={togglePlayer}>
             <FaTimes />
           </div>
-          <div className={Styles.videoContainer}>
+          <div className={styles.videoContainer}>
             <iframe
               title="YouTube Video Player"
               width="800"

@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './scrollbox.module.scss';
+import styles from './scrollbox.module.scss';
 import {Top, Data } from './data';
 
 // Import Swiper React components
@@ -17,7 +17,7 @@ import {Parallax,EffectFade, Mousewheel, Pagination } from 'swiper/modules';
 export default function App() {
   return (
     <>
-      <div className={Styles.up} id='projects'>
+      <div className={styles.up} id='projects'>
             <h1>
               {Top.head}
             </h1>
@@ -39,7 +39,7 @@ export default function App() {
       >
       {Data.map((data)=>(
       <SwiperSlide>
-        <div className={Styles.side} style={{backgroundImage: `url(${data.photo})`}}>
+        <div className={styles.side} style={{backgroundImage: `url(${data.photo})`}}>
         </div>
         <img src={data.img}/>
       </SwiperSlide>
