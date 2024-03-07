@@ -5,13 +5,13 @@ import calen from '../../assets/calen.jpg'
 const FloatingSquares = () => {
   return (
     <div className={styles.floatingSquaresContainer}>
-      <div className={styles.floatingSquare}>
+      <div className={styles.floatingSq}>
         <img className={styles.calendarIcon} src={what} />
         <div className={styles.message}>Message</div>
       </div>
       <div className={styles.floatingSquare}>
-        <img className={styles.calendarIcon} src={calen} ></img>
-        <div className={styles.message}></div>
+        <img className={styles.calendarIcon} src={calen} />
+        <div className={styles.message}>Meetings</div>
       </div>
     </div>
   );

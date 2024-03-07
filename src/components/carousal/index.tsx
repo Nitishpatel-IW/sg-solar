@@ -51,19 +51,19 @@ const Carousal = () => {
                     <div className={styles.wrapper}>
                         <Row className={styles.heading}>
                             <Col span={18}>
-                                <h3 ref={(el) => { refs.current[0] = el }} style={{ opacity: `${getOpacity(0)}` }} className={styles.text}>Empowered by<br /> Cutting-Edge Technology.</h3>
+                                <p ref={(el) => { refs.current[0] = el }} style={{ opacity: `${getOpacity(0)}` }} className={styles.text}>Empowered by<br /> Cutting-Edge Technology.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[1] = el }} style={{ opacity: `${getOpacity(1)}` }} className={styles.text}>Revolutionary Savings,<br/>Guaranteed.</h3>
+                                <p ref={(el) => { refs.current[1] = el }} style={{ opacity: `${getOpacity(1)}` }} className={styles.text}>Revolutionary Savings,<br/>Guaranteed.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[2] = el }} style={{ opacity: `${getOpacity(2)}` }} className={styles.text}>Unlocking Energy Independence.</h3>
+                                <p ref={(el) => { refs.current[2] = el }} style={{ opacity: `${getOpacity(2)}` }} className={styles.text}>Unlocking Energy Independence.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[3] = el }} style={{ opacity: `${getOpacity(3)}` }} className={styles.text}>Redefining the<br/> Future of Energy.</h3>
+                                <p ref={(el) => { refs.current[3] = el }} style={{ opacity: `${getOpacity(3)}` }} className={styles.text}>Redefining the<br/> Future of Energy.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[4] = el }} style={{ opacity: `${getOpacity(4)}` }} className={styles.text}>Singapore's Green Evolution Begins.</h3>
+                                <p ref={(el) => { refs.current[4] = el }} style={{ opacity: `${getOpacity(4)}` }} className={styles.text}>Singapore's Green Evolution Begins.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[5] = el }} style={{ opacity: `${getOpacity(5)}` }} className={styles.text}>Embrace Energy Independence.</h3>
+                                <p ref={(el) => { refs.current[5] = el }} style={{ opacity: `${getOpacity(5)}` }} className={styles.text}>Embrace Energy Independence.</p>
                                 <br /><br />
-                                <h3 ref={(el) => { refs.current[6] = el }} style={{ opacity: 0 }} className={styles.text}>Commodi</h3>
+                                <p ref={(el) => { refs.current[6] = el }} style={{ opacity: 0 }} className={styles.text}>Commodi</p>
                                 <br /><br /><br /><br />
                             </Col>
                         </Row>

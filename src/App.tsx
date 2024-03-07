@@ -16,7 +16,7 @@ function App() {
       </Routes>
       </BrowserRouter>
       <Foot/>
-      <Floatbutton/>
+      {/* <Floatbutton/> */}
       
     </div>
   );
