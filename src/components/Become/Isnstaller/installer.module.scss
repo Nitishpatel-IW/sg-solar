@@ -149,11 +149,11 @@
             .downRow {
                 padding: 1.5rem 0;
                 display: flex;
-                gap: 1rem;
+                justify-content: space-between;
 
                 .boxCol {
                     background-color: $sg-white;
-                    padding: 1.8rem;
+                    padding: 2rem;
                     border-radius: 1.2rem;
 
                     img {

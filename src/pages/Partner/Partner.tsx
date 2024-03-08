@@ -1,20 +1,23 @@
 import React from 'react'
 import Navbar from '../../components/navbar/index'
 import Installer from '../../components/Become/Isnstaller/index'
+import Logo from '../../assets/logoWhite.jpg'
 const Partner = () => {
   const backgroundColor = '#FB8500';
-  const logoSrc = 'your_logo_source_here';
+  const logoSrc = Logo;
   const rightContainerFontColor = '#fff';
   const buttonColor = '#fff';
   const buttonFontColor = '#FB8500';
+  const btnText = 'Become Partner'
   return (
     <div>
         <Navbar 
-                backgroundColor={backgroundColor} 
+                bgColor={backgroundColor} 
                 logoSrc={logoSrc} 
-                rightContainerFontColor={rightContainerFontColor} 
+                fontColor={rightContainerFontColor} 
                 buttonColor={buttonColor} 
                 buttonFontColor={buttonFontColor} 
+                btnText={btnText}
             />
         <Installer/>
     </div>

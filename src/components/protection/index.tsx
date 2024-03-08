@@ -9,7 +9,7 @@ import PolicePopup from '../popup/police'
 const Protection: React.FC = () => {
 
   const [showPopup, setShowPopup] = useState(false);
-
+  showPopup?document.body.style.overflow="hidden":document.body.style.overflow="auto"
   const ClosePop = (): void => {
     return setShowPopup(false);
   }

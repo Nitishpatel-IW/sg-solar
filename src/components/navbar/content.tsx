@@ -15,7 +15,7 @@ interface MenuItem {
     {
       key: "work",
       label: (
-        <Link to="/#howWework" style={{ color: 'black', textDecoration: 'none' }}>
+        <Link to="/#howWework" style={{ textDecoration: 'none' }}>
           How we Work
         </Link>
       ),

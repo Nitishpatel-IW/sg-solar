@@ -10,7 +10,8 @@ interface PopupProps {
 }
 const Police = ({ closeModel }: PopupProps) => {
     return (
-        <div className={styles.wrap} onClick={closeModel}>
+        <>
+            <div className={styles.wrap} onClick={closeModel}></div>
 
             <div className={styles.popMain}>
                 <img className={styles.popX} src={Cancel} onClick={closeModel} />
@@ -45,7 +46,7 @@ const Police = ({ closeModel }: PopupProps) => {
                     <button className={styles.popBtn}>Get Started</button>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

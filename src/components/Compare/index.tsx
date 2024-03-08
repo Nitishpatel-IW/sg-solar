@@ -10,7 +10,7 @@ import { data } from './content';
 const Compare = () => {
 
     const [showPopup,setShowPopup]= useState(false);
-
+    showPopup?document.body.style.overflow="hidden":document.body.style.overflow="auto"
     const closePop =()=>{
         return(
             setShowPopup(false)

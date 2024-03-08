@@ -7,7 +7,7 @@ import ExpertPopup from '../popup/experts'
 const Expert: React.FC = () => {
 
     const [showPopup,setShowPopup] = useState(false);
-
+    showPopup?document.body.style.overflow="hidden":document.body.style.overflow="auto"
     const closePop = ()=>{
         return(
             setShowPopup(false)

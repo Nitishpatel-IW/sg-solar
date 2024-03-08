@@ -11,10 +11,17 @@ const SolarInfo: React.FC = () => {
 
 
   const [showPolice, setShowPolice] = useState(false);
+  showPolice?document.body.style.overflow="hidden":document.body.style.overflow="auto"
+
   const ClosePolice = (): void => {
     return setShowPolice(false);
   }
   const [showFinance, setShowFinance] = useState(false);
+  if(showPolice==false)
+  {
+    showFinance?document.body.style.overflow="hidden":document.body.style.overflow="auto"
+  }
+
   const CloseFinance = (): void => {
     return setShowFinance(false);
   }

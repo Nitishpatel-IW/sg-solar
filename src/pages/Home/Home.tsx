@@ -20,24 +20,25 @@ import Save from '../../components/Savings/index'
 import Grid from '../../components/grid/index'
 import Scroll from '../../components/scrollbox/index'
 import Scroll2 from '../../components/scrollbox2/index'
-import Img from '../../assets/logo.jpg'
+import Logo from '../../assets/logo.jpg'
 const Home = () => {
 
-
     const backgroundColor = '#fff8f5';
-    const logoSrc = '../../assets/logo.jpg';
-    const rightContainerFontColor = '#fff';
+    const logoSrc = Logo;
+    const FontColor = '#fff';
     const buttonColor = '#FB8500';
     const buttonFontColor = '#fff';
+    const btnText = 'Get Started';
     return (
         <div>
             <Header />
             <Navbar 
-                backgroundColor={backgroundColor} 
+                bgColor={backgroundColor} 
                 logoSrc={logoSrc} 
-                rightContainerFontColor={rightContainerFontColor} 
+                fontColor={FontColor} 
                 buttonColor={buttonColor} 
-                buttonFontColor={buttonFontColor} 
+                buttonFontColor={buttonFontColor}
+                btnText ={btnText} 
             />
             <Postal />
             <Video />

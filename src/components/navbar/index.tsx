@@ -5,36 +5,39 @@ import { Layout, Menu, Row, Col } from 'antd';
 import { menuItems } from './content';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.jpg'
-import { DownOutlined } from '@ant-design/icons';
+
 interface NavbarProps {
-  backgroundColor?: string;
+  bgColor?: string;
   logoSrc?: string;
-  rightContainerFontColor?: string;
+  fontColor?: string;
   buttonColor?: string;
   buttonFontColor?: string;
+  btnText?:string;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
-  backgroundColor,
+  bgColor,
   logoSrc,
-  rightContainerFontColor,
+  fontColor,
   buttonColor,
   buttonFontColor,
+  btnText,
+
 }) => {
   return (
-    <Row justify={'center'} className={styles.mainRow}>
+    <Row justify={'center'} className={styles.mainRow} style={{backgroundColor:bgColor}} >
       <Col span={18} className={styles.mainCol}>
         <Row className={styles.innerRow} justify={'space-between'}>
           <Col span={6} className={styles.logoSec}>
             <Link to='/'>
-              <img src={Logo} className={styles.img} />
+              <img src={logoSrc} className={styles.img} />
             </Link>
           </Col>
           <Col span={14} className={styles.item}>
-            <Menu className={styles.menu} mode="horizontal" items={menuItems} style={{ borderBottom: 'none', textDecoration: 'none', fontSize: '0.6rem', width: '100%', justifyContent: 'end' }} />
+            <Menu className={styles.menu} mode="horizontal" items={menuItems} style={{ borderBottom: 'none', color:fontColor, textDecoration: 'none', fontSize: '0.6rem', width: '100%', justifyContent: 'end' }} />
           </Col>
           <Col span={3} className={styles.btnbox}>
-            <button className={styles.btn}>Get started</button>
+            <button className={styles.btn} style={{backgroundColor:buttonColor, color:buttonFontColor}}>{btnText}</button>
           </Col>
         </Row>
       </Col>

@@ -2,7 +2,7 @@
 
 .mainRow{
 	margin-top: -1px;
-	background-color: $sg-bgColor;
+	// background-color: $sg-bgColor;
 	z-index: 3;
 	position: sticky;
 	top: 0;
@@ -21,7 +21,7 @@
 			.item{
 				display: flex;
 				align-items: center;
-				justify-content: end;
+				justify-content: flex-end;
 				.menu{
 					background-color: transparent;
 				}
@@ -29,12 +29,10 @@
 			.btnbox{
 				display: flex;
 				align-items: center;
-				justify-content: end;
+				justify-content: flex-end;
 				.btn{
-					background-color: $sg-orange;
-					color: $sg-white;
 					border: none;
-					font-size: 0.8rem;
+					font-size: 0.7rem;
 					border-radius: 5rem;
 					padding: 0.5rem 0.9rem;
 				}
@@ -80,10 +78,9 @@ img {
 		}
 
 		.btn {
+			
 			display: flex;
 			align-items: center;
-			// background: linear-gradient(135deg, #ff932e, #e57003);
-			// color: $sg-white;
 			border-radius: 100px;
 			font-size: 14px;
 			padding: 0px 14px;
@@ -99,4 +96,3 @@ img {
 .ant-menu-item a {
 	text-decoration: none; // Remove underline
   }
-  

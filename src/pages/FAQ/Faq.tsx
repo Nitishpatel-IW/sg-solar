@@ -1,21 +1,23 @@
 import React from 'react'
 import Navbar from '../../components/navbar/index'
 import Pagefaq from '../../components/pageFAQ/Index'
-import Img from '../../assets/logo.jpg'
+import Logo from '../../assets/logoWhite.jpg'
 const Faq = () => {
-  const backgroundColor = '#1781e4';
-  const logoSrc = localStorage.getItem('../../assets/logo.jpg');
+  const bgColor = '#1781e4';
+  const logoSrc = Logo;
   const rightContainerFontColor = '#fff';
   const buttonColor = '#fff';
   const buttonFontColor = '#1781e4';
+  const btnText='Get Started'
   return (
     <div>
         <Navbar 
-                backgroundColor={backgroundColor} 
-                logoSrc={logoSrc || ''} 
-                rightContainerFontColor={rightContainerFontColor} 
+                bgColor={bgColor} 
+                logoSrc={logoSrc} 
+                fontColor={rightContainerFontColor} 
                 buttonColor={buttonColor} 
                 buttonFontColor={buttonFontColor} 
+                btnText={btnText}
             />
         <Pagefaq/>    
     </div>

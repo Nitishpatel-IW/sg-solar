@@ -6,7 +6,7 @@ import { data } from './content';
 import FinancePopup from '../popup/finance'
 const Finance: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false);
-
+    showPopup?document.body.style.overflow="hidden":document.body.style.overflow="auto"
     const ClosePop =():void=>{
         return setShowPopup(false);
     }
