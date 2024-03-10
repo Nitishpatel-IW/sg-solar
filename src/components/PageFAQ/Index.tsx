@@ -1,18 +1,20 @@
-import React, { useState } from 'react'
-import styles from './pageFaq.module.scss'
-import { Col, Row, Input } from 'antd'
-import { SearchOutlined } from '@ant-design/icons'
-import Add from '../../assets/faqadd.jpg'
-import Sub from '../../assets/faqminus.jpg'
-import { Topic } from './content'
+import React, { useState } from 'react';
+import styles from './pageFaq.module.scss';
+import { Col, Row, Input } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
+import Add from '../../assets/faqadd.jpg';
+import Sub from '../../assets/faqminus.jpg';
+import { Topic } from './content';
+
 const Pagefaq = () => {
-    const [selected, setSelected] = useState(-1)
-    const toggle = (i: number) => {
-        if (selected == i) {
-            return setSelected(-1)
-        }
-        setSelected(i)
-    }
+    const [selected, setSelected] = useState<{ [key: number]: number }>({});
+
+    const toggle = (topicId: number, i: number) => {
+        setSelected(prevSelected => ({
+            ...prevSelected,
+            [topicId]: prevSelected[topicId] === i ? -1 : i
+        }));
+    };
 
     return (
         <div className={styles.main}>
@@ -30,7 +32,7 @@ const Pagefaq = () => {
                     <Row justify={'space-between'}>
                         <Col className={styles.leftCol} span={5}>
                             <h3>General</h3>
-                            <h3>installer</h3>
+                            <h3>Installer</h3>
                             <h3>Cost & Financing</h3>
                             <h3>Maintenance</h3>
                             <h3>Referral</h3>
@@ -44,11 +46,11 @@ const Pagefaq = () => {
                                             <h3 className={styles.general}>{t.head}</h3>
                                             {t.faq.map((item, i) => (
                                                 <div className={styles.item} key={i}>
-                                                    <div className={styles.title} onClick={() => toggle(i)}>
-                                                        <span>{selected === i ? <img src={Sub} className={styles.imgsec} /> : <img src={Add} className={styles.imgsec} />}</span>
+                                                    <div className={styles.title} onClick={() => toggle(t.key, i)}>
+                                                        <span>{selected[t.key] === i ? <img src={Sub} className={styles.imgsec} /> : <img src={Add} className={styles.imgsec} />}</span>
                                                         <p>{item.question}</p>
                                                     </div>
-                                                    <div className={styles[selected === i ? 'showContent' : 'content']}>{item.answer}</div>
+                                                    <div className={styles[selected[t.key] === i ? 'showContent' : 'content']}>{item.answer}</div>
                                                 </div>
                                             ))}
                                         </div>
@@ -60,7 +62,7 @@ const Pagefaq = () => {
                 </Col>
             </Row>
         </div>
-    )
-}
+    );
+};
 
-export default Pagefaq
+export default Pagefaq;

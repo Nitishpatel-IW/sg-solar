@@ -8,8 +8,8 @@
   
   .img {
     margin: 3rem;
-    height: 80vh;
     width: 50vw;
+    aspect-ratio: 16/10;
     cursor: pointer;
   }
   
@@ -27,7 +27,12 @@
   }
   
   .videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    // overflow-x: clip;
+    aspect-ratio: 16/9;
   }
   
   .closeButton {

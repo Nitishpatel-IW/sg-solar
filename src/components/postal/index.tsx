@@ -6,10 +6,10 @@ const index: React.FC = () => {
   return (
     <div className={styles.main}>
       <h1>
-        Solar and <span>Saving</span><br /> for every roof
+        Solar and <span>Saving</span> for every roof
       </h1>
       <p>
-        Visualize solar on your roof and check your<br />potential savings now
+        Visualize solar on your roof and check yourpotential savings now
       </p>
       <div className={styles.input}>
         <div >
