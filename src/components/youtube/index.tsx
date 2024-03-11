@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Img from '../../assets/youtube.jpg';
-import styles from './youtube.module.scss';
+import styles from './styles.module.scss';
 import { FaTimes } from 'react-icons/fa';
 
-const Index: React.FC = () => {
+const Youtube: React.FC = () => {
   const [showPlayer, setShowPlayer] = useState(false);
 
   const togglePlayer = () => {
@@ -34,4 +34,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default Youtube;
