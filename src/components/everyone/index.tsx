@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 
-import styles from './every.module.scss'
+import styles from './styles.module.scss'
 import { Gallery } from './content'
 const Every = () => {
     return (

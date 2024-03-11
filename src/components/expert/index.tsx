@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './expert.module.scss'
+import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import { data } from './content';
 import ExpertPopup from '../popup/experts'
