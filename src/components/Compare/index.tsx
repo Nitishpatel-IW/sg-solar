@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import styles from './compare.module.scss'
+import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
-import { EnvironmentFilled } from '@ant-design/icons';
-import { Input } from 'antd';
 import VendorPopup from '../popup/vendors'
 import { data } from './content';
 

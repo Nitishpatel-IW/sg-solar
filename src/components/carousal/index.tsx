@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import styles from './carousal.module.scss'
+import styles from './styles.module.scss'
 import RectImg from '../../assets/Rectangle1.jpg'
 import { Col, Row } from 'antd'
 
