@@ -2,7 +2,7 @@ import React from 'react'
 import Img1 from '../../assets/drops.jpg'
 import Img2 from '../../assets/barchart.jpg'
 import { Row, Col } from 'antd'
-import styles from './efficiency.module.scss'
+import styles from './styles.module.scss'
 import { data } from './content'
 const Efficiency: React.FC = () => {
   return (
