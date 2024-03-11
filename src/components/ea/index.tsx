@@ -1,8 +1,8 @@
-import styles from './easy.module.scss'
+import styles from './styles.module.scss'
 import React from 'react'
 import { Row, Col } from 'antd'
-
 import { data } from './content'
+
 const Easy = () => {
     return (
         <div className={styles.main} id='easy'>
