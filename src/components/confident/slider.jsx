@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Keyboard } from 'swiper/modules';
-import { content } from '../FAQ/questionsBank';
+import { content } from '../faqComponent/questionsBank';
 
 export default function App() {
   return (

@@ -1,10 +1,10 @@
-import React from 'react'
-import styles from './footer.module.scss'
-import Logo from '../../assets/logo.jpg'
-import Fb from '../../assets/fb.jpg'
-import Ib from '../../assets/insta.jpg'
-import In from '../../assets/lnkdn.jpg'
-import { Row, Col } from 'antd'
+import styles from './styles.module.scss';
+import Logo from '../../assets/logo.jpg';
+import Fb from '../../assets/fb.jpg';
+import Ib from '../../assets/insta.jpg';
+import In from '../../assets/lnkdn.jpg';
+import { Row, Col } from 'antd';
+
 const Footer = () => {
     return (
         <>

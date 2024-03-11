@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 
 import { Row, Col } from 'antd'
-import styles from './finance.module.scss'
+import styles from './styles.module.scss'
 import { data } from './content';
 import FinancePopup from '../popup/finance'
+
 const Finance: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false);
     showPopup?document.body.style.overflow="hidden":document.body.style.overflow="auto"

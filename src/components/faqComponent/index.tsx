@@ -1,6 +1,6 @@
 import React from 'react'
 import Call from '../../assets/call.jpg'
-import styles from './faq.module.scss'
+import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import Accordian from './accordian';
 import { data } from './questionsBank';

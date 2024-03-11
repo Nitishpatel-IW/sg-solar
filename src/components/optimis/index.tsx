@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './optimise.module.scss'
+import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
