@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './grid.module.scss'
+import styles from './styles.module.scss'
 import { Card, Col, Row, Button } from 'antd';
 import { cirle, payment, police, thumb, tick } from './gridData'
 import PolicePopup from '../popup/police'
@@ -7,7 +7,7 @@ import FinancePopup from '../popup/finance'
 
 
 
-const SolarInfo: React.FC = () => {
+const Grid: React.FC = () => {
 
 
   const [showPolice, setShowPolice] = useState(false);
@@ -101,4 +101,4 @@ const SolarInfo: React.FC = () => {
   );
 };
 
-export default SolarInfo;
+export default Grid;
