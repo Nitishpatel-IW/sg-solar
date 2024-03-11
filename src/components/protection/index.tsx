@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import Img from '../../assets/Rectangle.jpg'
-import styles from './protection.module.scss'
+import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import { data } from './content';
 import PolicePopup from '../popup/police'

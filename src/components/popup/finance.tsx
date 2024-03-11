@@ -1,10 +1,9 @@
-import { Col, Input, Row } from 'antd'
-import React, { useEffect, useRef } from 'react'
-import styles from './Popup.module.scss'
-import Logo from '../../assets/logo.jpg'
+import { Col, Input, Row } from 'antd';
+import styles from './styles.module.scss';
+import Logo from '../../assets/logo.jpg';
 import { EnvironmentFilled } from '@ant-design/icons';
-import Panel from '../../assets/panel1.jpg'
-import Cancel from '../../assets/cancel.jpg'
+import Panel from '../../assets/panel1.jpg';
+import Cancel from '../../assets/cancel.jpg';
 
 interface PopupProps {
     closeModel: () => void;

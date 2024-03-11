@@ -1,8 +1,7 @@
-import React from 'react'
-import styles from './Popup.module.scss'
-import Logo from '../../assets/logo.jpg'
-import Cancel from '../../assets/cancel.jpg'
-import { Input } from 'antd'
+import styles from './styles.module.scss';
+import Logo from '../../assets/logo.jpg';
+import Cancel from '../../assets/cancel.jpg';
+import { Input } from 'antd';
 import { EnvironmentFilled } from '@ant-design/icons';
 
 interface PopupProps {

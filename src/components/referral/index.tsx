@@ -1,8 +1,9 @@
-import React from 'react'
-import Img from '../../assets/referral.jpg'
-import styles from './referral.module.scss'
-import { Row, Col } from 'antd'
-const referral: React.FC = () => {
+import React from 'react';
+import Img from '../../assets/referral.jpg';
+import styles from './styles.module.scss';
+import { Row, Col } from 'antd';
+
+const Referral: React.FC = () => {
   return (
     <div className={styles.main}>
 
@@ -31,4 +32,4 @@ const referral: React.FC = () => {
   );
 };
 
-export default referral;
+export default Referral;

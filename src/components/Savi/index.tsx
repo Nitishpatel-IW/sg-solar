@@ -1,7 +1,6 @@
-import React from 'react'
-import styles from './save.module.scss'
-import { Row, Col } from 'antd'
-import Img from '../../assets/family.jpg'
+import styles from './styles.module.scss';
+import { Row, Col } from 'antd';
+import Img from '../../assets/family.jpg';
 
 
 const Save = () => {

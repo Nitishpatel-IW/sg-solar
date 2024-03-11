@@ -1,8 +1,9 @@
-import React from 'react'
-import styles from './postal.module.scss'
+import React from 'react';
+import styles from './styles.module.scss';
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
-const index: React.FC = () => {
+
+const Postal: React.FC = () => {
   return (
     <div className={styles.main}>
       <h1>
@@ -23,4 +24,4 @@ const index: React.FC = () => {
   )
 }
 
-export default index
+export default Postal;

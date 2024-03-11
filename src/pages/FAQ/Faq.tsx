@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar/index'
-import Pagefaq from '../../components/pageFAQ/Index'
+import Pagefaq from '../../components/faqPage/Index'
 import Logo from '../../assets/logoWhite.jpg'
 const Faq = () => {
   const bgColor = '#1781e4';

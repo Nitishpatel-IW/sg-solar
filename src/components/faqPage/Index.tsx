@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import styles from './pageFaq.module.scss';
+import styles from './styles.module.scss';
 import { Col, Row, Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Add from '../../assets/faqadd.jpg';
 import Sub from '../../assets/faqminus.jpg';
 import { Topic } from './content';
 
-const Pagefaq = () => {
+const Faqpage = () => {
     const [selected, setSelected] = useState<{ [key: number]: number }>({});
 
     const toggle = (topicId: number, i: number) => {
@@ -65,4 +65,4 @@ const Pagefaq = () => {
     );
 };
 
-export default Pagefaq;
+export default Faqpage;
