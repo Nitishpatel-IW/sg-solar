@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from '../../components/navbar/index'
-import Installer from '../../components/becomeInstaller/index'
-import Logo from '../../assets/logoWhite.jpg'
+import Navbar from '../../components/navbar/index';
+import Installer from '../../components/becomeInstaller/index';
+import Logo from '../../assets/icons/logoWhite.jpg';
+
 const Partner = () => {
   const backgroundColor = '#FB8500';
   const logoSrc = Logo;

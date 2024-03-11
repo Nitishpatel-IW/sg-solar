@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { Row, Col } from 'antd'
 import styles from './styles.module.scss'
-import { data } from './content';
+import { Data } from './content';
 import FinancePopup from '../popup/finance'
 
 const Finance: React.FC = () => {
@@ -17,19 +17,19 @@ const Finance: React.FC = () => {
                 <Col className={styles.meetCol} span={18}>
                     <Row justify={'space-between'} align={'middle'}>
                         <Col span={10} className={styles.padCol}>
-                            <h3 className={styles.head1} >{data.head1}</h3>
+                            <h3 className={styles.head1} >{Data.head1}</h3>
                             <h3 className={styles.head2}>
                                 Own solar panels starting
                                 from <span>SGD 65 / month</span> ,
                                 with no upfront fees
                             </h3>
                             <p>
-                               {data.para}
+                               {Data.para}
                             </p>
-                            <button className={styles.btn}  onClick={() => setShowPopup(true)} >{data.btn}</button>
+                            <button className={styles.btn}  onClick={() => setShowPopup(true)} >{Data.btn}</button>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
-                            <img src={data.img} />
+                            <img src={Data.img} />
                         </Col>
                     </Row>
                 </Col>

@@ -1,7 +1,6 @@
 import styles from './styles.module.scss';
 import { Row, Col } from 'antd';
-import Img from '../../assets/family.jpg';
-
+import Img from '../../assets/potrait/family.jpg';
 
 const Save = () => {
     return (

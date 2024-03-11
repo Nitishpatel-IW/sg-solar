@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
-import { data } from './content';
+import { Data } from './content';
 import ExpertPopup from '../popup/experts'
 
 const Expert: React.FC = () => {
@@ -18,17 +18,17 @@ const Expert: React.FC = () => {
                 <Col className={styles.meetCol} span={18}>
                     <Row justify={'space-between'} align={'middle'}>
                         <Col span={10} className={styles.padCol}>
-                            <h3 className={styles.head1} >{data.head1}</h3>
+                            <h3 className={styles.head1} >{Data.head1}</h3>
                             <h3 className={styles.head2}>
-                               {data.head2}
+                               {Data.head2}
                             </h3>
                             <p>
-                                {data.para}
+                                {Data.para}
                             </p>
-                            <button className={styles.btn} onClick={()=> setShowPopup(true)}>{data.btn}</button>
+                            <button className={styles.btn} onClick={()=> setShowPopup(true)}>{Data.btn}</button>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
-                            <img src={data.img} />
+                            <img src={Data.img} />
                         </Col>
                     </Row>
                 </Col>

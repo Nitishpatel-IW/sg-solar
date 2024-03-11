@@ -1,9 +1,9 @@
 import { Col, Input, Row } from 'antd';
 import styles from './styles.module.scss';
-import Logo from '../../assets/logo.jpg';
+import Logo from '../../assets/icons/logo.jpg';
 import { EnvironmentFilled } from '@ant-design/icons';
-import Panel from '../../assets/panel1.jpg';
-import Cancel from '../../assets/cancel.jpg';
+import Panel from '../../assets/potrait/panel1.jpg';
+import Cancel from '../../assets/icons/cancel.jpg';
 
 interface PopupProps {
     closeModel: () => void;

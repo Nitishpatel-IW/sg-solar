@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../../assets/referral.jpg';
+import Img from '../../assets/potrait/referral.jpg';
 import styles from './styles.module.scss';
 import { Row, Col } from 'antd';
 

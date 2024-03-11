@@ -1,9 +1,9 @@
-import React from 'react'
-import Img1 from '../../assets/drops.jpg'
-import Img2 from '../../assets/barchart.jpg'
-import { Row, Col } from 'antd'
-import styles from './styles.module.scss'
-import { data } from './content'
+import React from 'react';
+import Img1 from '../../assets/potrait/drops.jpg';
+import Img2 from '../../assets/landscape/barchart.jpg';
+import { Row, Col } from 'antd';
+import styles from './styles.module.scss';
+import { Data } from './content';
 const Efficiency: React.FC = () => {
   return (
     <div className={styles.main}>
@@ -12,13 +12,13 @@ const Efficiency: React.FC = () => {
           <Row justify={'space-between'} align={'middle'}>
             <Col span={10} className={styles.padCol}>
               <h3 className={styles.head1}>
-                {data.head1}
+                {Data.head1}
               </h3>
               <h3 className={styles.head2}>
-                {data.head2}
+                {Data.head2}
               </h3>
               <p>
-                {data.para}
+                {Data.para}
               </p>
             </Col>
             <Col className={styles.meetCol2} span={12}>

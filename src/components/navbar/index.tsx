@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import { Layout, Menu, Row, Col } from 'antd';
+import { Menu, Row, Col } from 'antd';
 import { menuItems } from './content';
 import { Link } from 'react-router-dom';
 

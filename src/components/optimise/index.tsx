@@ -1,9 +1,8 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import { Row, Col } from 'antd'
+import styles from './styles.module.scss';
+import { Row, Col } from 'antd';
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
-import Img from '../../assets/optimise.jpg'
+import Img from '../../assets/potrait/optimise.jpg';
 
 const Optimise = () => {
     return (

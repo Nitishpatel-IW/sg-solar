@@ -1,6 +1,7 @@
-import Img1 from '../../assets/easy1.jpg'
-import Img2 from '../../assets/easy2.jpg'
-export const data={
+import Img1 from '../../assets/landscape/easy1.jpg';
+import Img2 from '../../assets/landscape/easy2.jpg';
+
+export const Data={
 
     img1:Img1,
     img2:Img2,

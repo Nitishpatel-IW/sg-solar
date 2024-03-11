@@ -1,9 +1,9 @@
-import Img1 from '../../../assets/partnerBar.jpg'
-import Img2 from '../../../assets/partnerToggle.jpg'
-import Img3 from '../../../assets/partnerSerach.jpg'
-import box1 from '../../../assets/box1.jpg'
-import box2 from '../../../assets/box2.jpg'
-import box3 from '../../../assets/box3.jpg'
+import Img1 from '../../assets/icons/partnerBar.jpg';
+import Img2 from '../../assets/icons/partnerToggle.jpg';
+import Img3 from '../../assets/icons/partnerSerach.jpg';
+import box1 from '../../assets/icons/box1.jpg';
+import box2 from '../../assets/icons/box2.jpg';
+import box3 from '../../assets/icons/box3.jpg';
 
 export const data=[
     {

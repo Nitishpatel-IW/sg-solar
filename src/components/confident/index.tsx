@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import Slider from './slider'
+import styles from './styles.module.scss';
+import Slider from './slider';
+
 const Confident = () => {
     return (
         <div className={styles.main} id='confident'>

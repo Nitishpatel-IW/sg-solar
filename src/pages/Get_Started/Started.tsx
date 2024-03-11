@@ -1,5 +1,4 @@
-import React from 'react'
-import Navbar from '../../components/navbar/index'
+import Navbar from '../../components/navbar';
 
 const Started = () => {
   return (

@@ -1,8 +1,7 @@
-import React from 'react'
-import { Row, Col } from 'antd'
+import { Row, Col } from 'antd';
+import styles from './styles.module.scss';
+import { Gallery } from './content';
 
-import styles from './styles.module.scss'
-import { Gallery } from './content'
 const Every = () => {
     return (
         <div className={styles.main}>

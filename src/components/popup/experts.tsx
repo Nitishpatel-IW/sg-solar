@@ -1,8 +1,8 @@
-import { Col, Input, Row } from 'antd';
+import { Col, Row } from 'antd';
 import styles from './styles.module.scss';
-import Logo from '../../assets/logo.jpg';
-import Cancel from '../../assets/cancel.jpg';
-import Home from '../../assets/homevendorImg.jpg';
+import Logo from '../../assets/icons/logo.jpg';
+import Cancel from '../../assets/icons/cancel.jpg';
+import Home from '../../assets/potrait/homevendorImg.jpg';
 
 interface PopupProps {
     closeModel: () => void;

@@ -1,5 +1,5 @@
-import { Data } from './data'
-import styles from './styles.module.scss'
+import { Data } from './data';
+import styles from './styles.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';

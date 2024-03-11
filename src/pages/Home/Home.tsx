@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Navbar from '../../components/navbar/index';
 import Header from '../../components/header/index'
 import Postal from '../../components/postal/index'
@@ -20,7 +18,7 @@ import Save from '../../components/savings/index'
 import Grid from '../../components/gridComponent/index'
 import Scroll from '../../components/scrollbox/index'
 import Scroll2 from '../../components/scrollbox2/index'
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/icons/logo.jpg'
 const Home = () => {
 
     const backgroundColor = '#fff8f5';

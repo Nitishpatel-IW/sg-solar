@@ -1,5 +1,6 @@
-import Img from '../../assets/solution.jpg'
-export const data={
+import Img from '../../assets/potrait/solution.jpg';
+
+export const Data={
     img:Img,
     head1:"OUR EXPERT INSTALLERS AT YOUR SERVICE",
     head2:" The Best companies for your solar panel installation",

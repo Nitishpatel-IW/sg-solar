@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
-import { Card, Col, Row, Button } from 'antd';
-import { cirle, payment, police, thumb, tick } from './gridData'
+import { Col, Row, Button } from 'antd';
+import { cirle, payment, Police, thumb, tick } from './gridData'
 import PolicePopup from '../popup/police'
 import FinancePopup from '../popup/finance'
 
@@ -34,11 +34,11 @@ const Grid: React.FC = () => {
 
       <Row className={styles.mainRow}>
         <Col className={styles.leftCol} span={6}>
-          <img src={police.img} />
-          <h1>{police.head}</h1>
-          <h3>{police.subhead}</h3>
-          <p>{police.para}</p>
-          <p>{police.tc}</p>
+          <img src={Police.img} />
+          <h1>{Police.head}</h1>
+          <h3>{Police.subhead}</h3>
+          <p>{Police.para}</p>
+          <p>{Police.tc}</p>
           <Button className={styles.polBtn} onClick={() => setShowPolice(true)}>Learn more</Button>
         </Col>
         <Col className={styles.rightCol} span={12}>

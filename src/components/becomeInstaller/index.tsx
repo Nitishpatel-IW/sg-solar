@@ -1,8 +1,7 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import { Box, Market, Meet, data, list } from './content'
-import { Col, Row } from 'antd'
-import Img from '../../../assets/solvendor..jpg'
+import styles from './styles.module.scss';
+import { Box, Market, Meet, data, list } from './content';
+import { Col, Row } from 'antd';
+import Img from '../../assets/potrait/solvendor..jpg';
 
 const Installer = () => {
     return (

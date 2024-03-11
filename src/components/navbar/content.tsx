@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
-import { DownOutlined, UpOutlined } from '@ant-design/icons';
-import EnglishFlag from '../../assets/eng-flag.48437074.jpg';
-import BurmeseFlag from '../../assets/mymar.jpg';
+import { DownOutlined } from '@ant-design/icons';
+import EnglishFlag from '../../assets/icons/eng.jpg';
+import BurmeseFlag from '../../assets/icons/mymar.jpg';
 
 interface MenuItem {
     key: string;

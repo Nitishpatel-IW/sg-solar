@@ -1,4 +1,5 @@
-import Img from '../../assets/compare.jpg'
+import Img from '../../assets/potrait/compare.jpg';
+
 export const data={
     img:Img,
     head1:"COMPARE SOLAR VENDORS ON OUR PLATFORM",

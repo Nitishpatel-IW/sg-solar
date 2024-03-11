@@ -1,12 +1,12 @@
-import Img1 from '../../assets/risk1.jpg'
-import Img2 from '../../assets/risk2.jpg'
-import Img3 from '../../assets/risk3.jpg'
-import Img4 from '../../assets/risk4.jpg'
+import Img1 from '../../assets/landscape/risk1.jpg'
+import Img2 from '../../assets/landscape/risk2.jpg'
+import Img3 from '../../assets/landscape/risk3.jpg'
+import Img4 from '../../assets/landscape/risk4.jpg'
 
-import Ig1 from '../../assets/screen1.jpg'
-import Ig2 from '../../assets/screen2.jpg'
-import Ig3 from '../../assets/screen3.jpg'
-import Ig4 from '../../assets/screen4.jpg'
+import Ig1 from '../../assets/landscape/screen1.jpg'
+import Ig2 from '../../assets/landscape/screen2.jpg'
+import Ig3 from '../../assets/landscape/screen3.jpg'
+import Ig4 from '../../assets/landscape/screen4.jpg'
 
 export const Top={
     head:`The Risk-Free & Smart way to buy solar`,

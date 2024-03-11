@@ -1,9 +1,10 @@
-import Img1 from '../../assets/police.jpg'
-import Img2 from '../../assets/orangecircle.jpg'
-import Img3 from '../../assets/thumbsup.jpg'
-import Img4 from '../../assets/payments.jpg'
-import Img5 from '../../assets/tick.jpg'
-export const police={
+import Img1 from '../../assets/icons/police.jpg';
+import Img2 from '../../assets/icons/orangecircle.jpg';
+import Img3 from '../../assets/icons/thumbsup.jpg';
+import Img4 from '../../assets/icons/payments.jpg';
+import Img5 from '../../assets/icons/tick.jpg';
+
+export const Police={
     img:Img1,
     head:'SGD 10,000',
     subhead:'SOL Roof Guarantee covering roof damage due to solar panel installation',

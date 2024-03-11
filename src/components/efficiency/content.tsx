@@ -1,4 +1,4 @@
-export const data =
+export const Data =
     {
         head1: "SOLAR PANEL EFFICIENCY",
         head2: "Solar works even if it rains!",

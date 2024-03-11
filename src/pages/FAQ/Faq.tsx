@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navbar/index'
 import Pagefaq from '../../components/faqPage/Index'
-import Logo from '../../assets/logoWhite.jpg'
+import Logo from '../../assets/icons/logoWhite.jpg'
 const Faq = () => {
   const bgColor = '#1781e4';
   const logoSrc = Logo;

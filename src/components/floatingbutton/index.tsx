@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
-import what from '../../assets/whats.jpg';
-import calen from '../../assets/calen.jpg';
+import what from '../../assets/icons/whats.jpg';
+import calen from '../../assets/icons/calen.jpg';
 
 const FloatingSquares = () => {
   return (

@@ -1,5 +1,6 @@
-import Img from '../../assets/Rectangle.jpg'
-export const data={
+import Img from '../../assets/potrait/Rectangle.jpg';
+
+export const Data={
     img:Img,
     head1:"SOL PROTECTION",
     head2:"100% Roof protection included",

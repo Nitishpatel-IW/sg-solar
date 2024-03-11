@@ -1,8 +1,8 @@
 import styles from './styles.module.scss';
-import Logo from '../../assets/logo.jpg';
-import Fb from '../../assets/fb.jpg';
-import Ib from '../../assets/insta.jpg';
-import In from '../../assets/lnkdn.jpg';
+import Logo from '../../assets/icons/logo.jpg';
+import Fb from '../../assets/icons/fb.jpg';
+import Ib from '../../assets/icons/insta.jpg';
+import In from '../../assets/icons/lnkdn.jpg';
 import { Row, Col } from 'antd';
 
 const Footer = () => {

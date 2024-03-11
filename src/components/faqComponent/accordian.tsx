@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import styles from './faq.module.scss'
-import { content } from './questionsBank'
-import Add from '../../assets/add.jpg'
-import Sub from '../../assets/sub.jpg'
+import { useState } from 'react';
+import styles from './styles.module.scss';
+import { content } from './questionsBank';
+import Add from '../../assets/icons/add.jpg';
+import Sub from '../../assets/icons/sub.jpg';
 
 const Accordian = () => {
     const [selected,setSelected] = useState(-1)

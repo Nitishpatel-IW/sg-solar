@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './styles.css';
 import 'swiper/css/effect-fade';
-import {Parallax,EffectFade, Mousewheel, Pagination } from 'swiper/modules';
+import {EffectFade, Mousewheel, Pagination } from 'swiper/modules';
 
 export default function App() {
   return (

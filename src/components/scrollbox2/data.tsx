@@ -1,14 +1,14 @@
-import Img1 from '../../assets/trusted_1.jpg'
-import Img2 from '../../assets/trusted_2.jpg'
-import Img3 from '../../assets/trusted_3.jpg'
-import Img4 from '../../assets/trusted_4.jpg'
-import Img5 from '../../assets/trusted_5.jpg'
+import Img1 from '../../assets/landscape/trusted_1.jpg'
+import Img2 from '../../assets/landscape/trusted_2.jpg'
+import Img3 from '../../assets/landscape/trusted_3.jpg'
+import Img4 from '../../assets/landscape/trusted_4.jpg'
+import Img5 from '../../assets/landscape/trusted_5.jpg'
 
-import Ig1 from '../../assets/watt1.jpg'
-import Ig2 from '../../assets/watt2.jpg'
-import Ig3 from '../../assets/watt3.jpg'
-import Ig4 from '../../assets/watt4.jpg'
-import Ig5 from '../../assets/watt5.jpg'
+import Ig1 from '../../assets/landscape/watt1.jpg'
+import Ig2 from '../../assets/landscape/watt2.jpg'
+import Ig3 from '../../assets/landscape/watt3.jpg'
+import Ig4 from '../../assets/landscape/watt4.jpg'
+import Ig5 from '../../assets/landscape/watt5.jpg'
 
 export const Top={
     head:`Trusted by Corporates, institutions and

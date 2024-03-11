@@ -1,6 +1,6 @@
-import Img1 from '../../assets/every1.jpg'
-import Img2 from '../../assets/every2.jpg'
-import Img3 from '../../assets/every3.jpg'
+import Img1 from '../../assets/potrait/every1.jpg';
+import Img2 from '../../assets/potrait/every2.jpg';
+import Img3 from '../../assets/potrait/every3.jpg';
 import { NavLink } from 'react-router-dom';
 
 export const Gallery = [

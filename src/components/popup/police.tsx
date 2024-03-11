@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
-import Logo from '../../assets/logo.jpg';
-import Cancel from '../../assets/cancel.jpg';
+import Logo from '../../assets/icons/logo.jpg';
+import Cancel from '../../assets/icons/cancel.jpg';
 import { Input } from 'antd';
 import { EnvironmentFilled } from '@ant-design/icons';
 

@@ -1,7 +1,8 @@
-import Img1 from '../../assets/homeSolar.jpg'
-import Img2 from '../../assets/netmeter.jpg'
-import Img3 from '../../assets/solararticle.jpg'
-import Img4 from '../../assets/bussOwner.jpg'
+import Img1 from '../../assets/landscape/homeSolar.jpg';
+import Img2 from '../../assets/landscape/netmeter.jpg';
+import Img3 from '../../assets/landscape/solararticle.jpg';
+import Img4 from '../../assets/landscape/bussOwner.jpg';
+
 export const Data=[
 
     {

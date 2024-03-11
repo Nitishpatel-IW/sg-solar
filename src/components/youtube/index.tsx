@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Img from '../../assets/youtube.jpg';
+import Img from '../../assets/landscape/youtube.jpg';
 import styles from './styles.module.scss';
 import { FaTimes } from 'react-icons/fa';
 

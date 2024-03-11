@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import { Col, Row, Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import Add from '../../assets/faqadd.jpg';
-import Sub from '../../assets/faqminus.jpg';
+import Add from '../../assets/icons/faqadd.jpg';
+import Sub from '../../assets/icons/faqminus.jpg';
 import { Topic } from './content';
 
 const Faqpage = () => {
