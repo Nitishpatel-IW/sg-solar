@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './confident.module.scss'
+import styles from './styles.module.scss'
 import Slider from './slider'
-const confident = () => {
+const Confident = () => {
     return (
         <div className={styles.main} id='confident'>
             <div className={styles.up}>
@@ -19,4 +19,4 @@ const confident = () => {
     )
 }
 
-export default confident
+export default Confident
