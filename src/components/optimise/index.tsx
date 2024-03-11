@@ -4,7 +4,8 @@ import { Row, Col } from 'antd'
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
 import Img from '../../assets/optimise.jpg'
-const index = () => {
+
+const Optimise = () => {
     return (
         <div className={styles.main}>
             <Row className={styles.meet} align={'middle'} justify={'center'}>
@@ -34,4 +35,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Optimise;
