@@ -10,7 +10,7 @@ const Postal: React.FC = () => {
         Solar and <span>Saving</span> for every roof
       </h1>
       <p>
-        Visualize solar on your roof and check yourpotential savings now
+        Visualize solar on your roof and check your potential savings now
       </p>
       <div className={styles.input}>
         <div >

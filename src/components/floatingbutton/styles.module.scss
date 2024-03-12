@@ -10,33 +10,18 @@
     display: flex;
     align-items: center;
     background-color: $sg-orange;
-    border-radius: 4px;
+    border-radius: 7px;
     width: 9rem;
     margin: 5px;
 
     &:hover { 
-  
       right: -1rem;
-  
     }
   }
-  .floatingSquare {
-    position: fixed;
-    bottom: 2rem;
-    right: -7rem;
-    transition: right 0.5s ease;
-    display: flex;
-    align-items: center;
-    background-color: $sg-orange;
-    border-radius: 4px;
-    width: 9rem;
-    margin: 5px;
 
-    &:hover { 
-  
-      right: -1rem;
-  
-    }
+  .floatingSquare {
+    bottom: 2rem;
+    @extend .floatingSq;
   }
   
   .calendarIcon {
@@ -46,7 +31,6 @@
     padding: 4px;
 
   }
-
   .message {
 
     font-size: 0.7rem;

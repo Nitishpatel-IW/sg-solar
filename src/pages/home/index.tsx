@@ -30,33 +30,38 @@ const Home = () => {
     const btnText = 'Get Started';
     return (
         <div>
-            <Header />
-            <Navbar 
-                bgColor={backgroundColor} 
-                logoSrc={logoSrc} 
-                fontColor={FontColor} 
-                buttonColor={buttonColor} 
-                buttonFontColor={buttonFontColor}
-                btnText ={btnText} 
-            />
-            <Postal />
-            <Video />
-            <Carousal />
-            <Finance />
-            <Save />
-            <Grid />
-            <Prot />
-            <Lowest />
-            <Optimise />
-            <Expert />
-            <Scroll />
-            <Easy />
-            <Every />
-            <Ref />
-            <Scroll2 />
-            <Eff />
-            <Confident />
-            <Faq />
+
+            <header>
+                <Header />
+                <Navbar 
+                    bgColor={backgroundColor} 
+                    logoSrc={logoSrc} 
+                    fontColor={FontColor} 
+                    buttonColor={buttonColor} 
+                    buttonFontColor={buttonFontColor}
+                    btnText ={btnText} 
+                />
+            </header>
+            <main>
+                <Postal />
+                <Video />
+                <Carousal />
+                <Finance />
+                <Save />
+                <Grid />
+                <Prot />
+                <Lowest />
+                <Optimise />
+                <Expert />
+                <Scroll />
+                <Easy />
+                <Every />
+                <Ref />
+                <Scroll2 />
+                <Eff />
+                <Confident />
+                <Faq />
+            </main>
         </div>
     )
 }
