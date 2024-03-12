@@ -11,24 +11,21 @@ const Footer = () => {
             <div className={styles.main}>
                 <Row className={styles.first} justify="center">
                     <Col className={styles.firstCol} span={18}>
-                        <h2>“ Powering homes and businesses in Singapore with the sun,<span>SG Solar Home.</span> ”</h2>
+                        <h2 className={styles.head1}>“ Powering homes and businesses in Singapore with the sun,<span>SG Solar Home.</span> ”</h2>
                         <button className={styles.btn}>Get started with solar today</button>
                     </Col>
                 </Row>
                 <Row className={styles.second} justify={'center'}>
                     <Col className={styles.secondOne} span={3}>
-                        <img src={Logo} />
-                        <p>625 Aljunied road, 05-06, Aljunied Industrial Complex, Singapore, 389836</p>
+                        <img className={styles.img1} src={Logo} />
+                        <p className={styles.para1}>625 Aljunied road, 05-06, Aljunied Industrial Complex, Singapore, 389836</p>
                         <div className={styles.contact}>
-                            <img src={Fb} />
-                            <img src={Ib} />
-                            <img src={In} />
-
+                            <img className={styles.img2} src={Fb} />
+                            <img className={styles.img2} src={Ib} />
+                            <img className={styles.img2} src={In} />
                         </div>
                     </Col>
-
                     <Col span={8}></Col>
-
                     <Col className={styles.secondTwo} span={7}>
                         <Row>
                             <Col span={10}>

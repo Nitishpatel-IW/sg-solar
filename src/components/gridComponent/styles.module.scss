@@ -1,5 +1,15 @@
 @import '../../styles/varibles';
 
+@mixin button-styles($background:linear-gradient(135deg, #ff932e, #e57003), $color:$sg-white, $border:none ) {
+    background: $background;
+    color: $color;
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: $border;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -41,15 +51,7 @@
             }
 
             .polBtn {
-                background: $sg-white;
-                color: $sg-orange;
-                margin: 6px 0;
-                font-size: 16px;
-                font-weight: 500;
-                padding: 10px 24px;
-                padding-bottom: 34px;
-                border-radius: 100px;
-                border: none;
+                @include button-styles($sg-white, $sg-orange, none);
             }
         }
 
@@ -57,64 +59,7 @@
             object-fit: cover;
 
             .subRow {
-
-                .cirCol {
-                    background-color: $sg-white;
-                    border-radius: 18px;
-                    margin: 10px;
-                    padding: 0.5rem;
-
-                    img {
-                        object-fit: contain;
-                    }
-                    h2 {
-                        color: $sg-black-75;
-                    }
-                    p {
-                        color: $sg-black-50
-                    }
-                }
-
-                .payCol {
-                    background-color: $sg-white;
-                    border-radius: 18px;
-                    margin: 10px;
-                    padding: 0.5rem;
-
-                    div {
-                        display: flex;
-                        justify-content: space-around;
-                        gap: 3rem;
-
-                        h2 {
-                            color: $sg-black-75;
-                        }
-
-                        img {
-                            object-fit: contain;
-                        }
-                    }
-
-                    p {
-                        color: $sg-black-50
-                    }
-
-                    button {
-                        background: linear-gradient(135deg, #ff932e, #e57003);
-                        color: $sg-white;
-                        margin: 6px 0;
-                        font-size: 16px;
-                        font-weight: 500;
-                        font-size: 16px;
-                        padding: 12px 24px;
-                        border-radius: 100px;
-                        border: none;
-                    }
-                }
-            }
-
-            .subRowtwo {
-                .thuCol {
+                .cirCol, .payCol {
                     background-color: $sg-white;
                     border-radius: 18px;
                     margin: 10px;
@@ -133,37 +78,63 @@
                     }
                 }
 
-                .ticCol {
+                .payCol {
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                        gap: 3rem;
+
+                        h2 {
+                            color: $sg-black-75;
+                        }
+
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+
+                    button {
+                        @include button-styles;
+                    }
+                }
+            }
+
+            .subRowtwo {
+                .thuCol, .ticCol {
                     background-color: $sg-white;
                     border-radius: 18px;
                     margin: 10px;
                     padding: 0.5rem;
 
+                    img {
+                        object-fit: contain;
+                    }
+
                     h2 {
-                        padding-right: 25px;
                         color: $sg-black-75;
                     }
 
-                    .outer {
-                        display: flex;
-                        justify-content: space-between;
+                    p {
+                        color: $sg-black-50;
+                    }
+                }
 
-                        .divone {
-                            .subdivone {
-                                display: flex;
-                                justify-content: flex-start;
-                                align-items: center;
-                            }
+                .outer {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .divone {
+                        .subdivone {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
                         }
                     }
                 }
             }
         }
-
     }
-
 }
-
 .tick {
     object-fit: contain;
 }

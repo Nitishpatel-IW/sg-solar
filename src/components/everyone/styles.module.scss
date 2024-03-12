@@ -6,7 +6,7 @@
         margin-bottom: 40px;
         justify-content: center;
         text-align: center;
-        h2{
+        .head1{
             margin: 0;
             font-size: 50px;
             font-weight: 650;
@@ -14,7 +14,7 @@
                 color: $sg-orange;
             }
         }
-        h3{
+        .head2{
             margin: 0;
             font-weight: 400;
             font-size: 20px;
@@ -27,11 +27,11 @@
             display: flex;
             gap: 2rem;
         }
-        img{
+        .img{
             max-width: 100%;
             height: auto;
         }
-        h2{
+        .head3{
             margin-top: 32px;
             font-weight: 700;
             font-size: 24px;
@@ -39,7 +39,7 @@
             color:$sg-black;
             margin-bottom: 10px;
         }
-        p{
+        .para{
             font-size: 16px;
             line-height: 1.5;
             color:$sg-black-50;

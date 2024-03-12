@@ -31,7 +31,7 @@
                     }
                 }
 
-                p {
+                .para1 {
                     margin-bottom: 40px;
                     font-weight: 400;
                     font-size: 0.9rem;
@@ -55,13 +55,13 @@
                         border: none;
                     }
 
-                    img {
+                    .img {
                         width: 0.7rem;
                         height: 100%;
                         object-fit: contain;
                     }
 
-                    p {
+                    .para2 {
                         margin: 0 0 0 0.4rem;
                         font-weight: 500;
                         color: $sg-black-75;

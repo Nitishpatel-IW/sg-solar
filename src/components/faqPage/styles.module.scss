@@ -9,11 +9,11 @@
             color: $sg-white;
             line-height: 1.4rem;
 
-            h3{
+            .head1{
                 font-size:2rem;
                 font-weight: 600;
             }
-            p{
+            .para{
                 font-size: 0.9rem;
                 font-weight: 400;
             }
@@ -46,7 +46,7 @@
             position: sticky;
             top: 4rem;
 
-            h3{
+            .head2{
                 font-size: 0.75rem;
                 font-weight: 500;
             }
@@ -73,7 +73,6 @@
                         font-size: 0.9rem;
                         color: #4D4A42;
                         display: flex;
-                        // justify-content: space-between;
                         align-items: center;
                         cursor: pointer;
 

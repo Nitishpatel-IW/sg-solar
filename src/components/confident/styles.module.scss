@@ -5,19 +5,22 @@
         margin: 3rem 0;
         text-align: center;
         width: 100%;
-        h1 {
+
+        .head1 {
             font-size: 58px;
             text-align: center;
+
             span {
                 color: $sg-orange;
             }
         }
-        
-        p {
+
+        .para1 {
             font-size: 24px;
             line-height: 1.5;
             color: $sg-black-50;
         }
+
         .btn {
             width: fit-content;
             font-weight: 550;
@@ -35,58 +38,66 @@
 //slider
 
 
-.mySwiper{
+.mySwiper {
     display: flex;
     justify-content: center;
 }
 
-.swiper{
-display: flex;
-flex-direction: column;
-align-items: start;
+.swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.Cart{
+
+.Cart {
     height: 600px;
-    .imgSec{
+
+    .imgSec {
         display: contents;
         object-fit: contain;
         padding-top: 80px;
-        .img3{
-            border-radius:15px ;
+
+        .img3 {
+            border-radius: 15px;
             border: none;
             padding: 0px !important;
         }
     }
-    .content{
+
+    .content {
         width: 17rem;
-        .head{
+
+        .head {
             display: flex;
             gap: 14px;
             align-items: center;
             width: fit-content;
-            .line{
+
+            .line {
                 display: flex;
                 align-items: center;
                 border: 1px solid black;
                 width: 22px;
                 height: 0;
             }
-            .heading{
+
+            .heading {
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 19px;
                 color: #000;
             }
-            .subhead{
+
+            .subhead {
                 font-weight: 500;
                 font-size: 12px;
                 line-height: 16px;
-                color: rgba(17,17,21,.25);
+                color: rgba(17, 17, 21, .25);
             }
         }
-        .para{
+
+        .para {
             display: flex;
-            // width: 400px;
             font-weight: 700;
             font-size: 20px;
             color: #4d4a42;

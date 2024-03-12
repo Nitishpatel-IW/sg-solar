@@ -20,11 +20,11 @@ const Compare = () => {
                 <Col className={styles.meetCol} span={18}>
                     <Row justify={'space-between'} align={'middle'}>
                         <Col span={10} className={styles.padCol} order={1}>
-                            <h3 className={styles.head1} >{data.head1}</h3>
+                            <span className={styles.head1} >{data.head1}</span>
                             <h3 className={styles.head2}>
                                 Compare and get the <span>lowest </span>prices
                             </h3>
-                            <p>
+                            <p className={styles.para}>
                                {data.para}
                             </p>
                             <button className={styles.btn} onClick={()=>setShowPopup(true)}>{data.btn}</button>

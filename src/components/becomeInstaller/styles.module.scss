@@ -9,11 +9,11 @@
             color: $sg-white;
             line-height: 1rem;
 
-            h3{
+            .firsthead{
                 font-size:2rem;
                 font-weight: 600;
             }
-            p{
+            .firstpara{
                 font-size: 0.9rem;
                 font-weight: 500;
             }
@@ -39,10 +39,7 @@
                 margin: 2rem 0;
 
                 .imgdiv {
-
-                    width: 82px;
-
-                    img {
+                    .image {
 
                         width: 82px;
                         height: 62px;
@@ -50,13 +47,13 @@
                 }
 
                 .contentdiv {
-                    h3 {
+                    .contenthead {
                         margin: 0;
                         font-weight: 600;
                         font-size: 30px;
                     }
 
-                    p {
+                    .contentpara {
                         font-weight: 600;
                         font-size: 14px;
                         margin-top: 4px;
@@ -69,7 +66,7 @@
         .right {
             padding-left: 1rem;
 
-            h3 {
+            .righthead {
                 font-weight: 600;
                 font-size: 38px;
                 line-height: 55px;
@@ -81,14 +78,14 @@
                 }
             }
 
-            ul {
+            .rightul {
                 margin: 0;
                 padding: 1rem;
                 color: $sg-black-50;
                 font-weight: 500;
                 font-size: 16px;
 
-                li {
+                .rightli {
                     padding-bottom: 20px;
                 }
             }
@@ -102,7 +99,7 @@
                 align-items: end;
 
                 .upColcontent {
-                    h3 {
+                    .markethead{
                         font-weight: 600;
                         font-size: 38px;
                         line-height: 45px;
@@ -114,7 +111,7 @@
                         }
                     }
 
-                    p {
+                    .marketpara {
                         color: $sg-black-50;
                         font-weight: 450;
                         font-size: 17px;
@@ -154,18 +151,18 @@
                     padding: 2rem;
                     border-radius: 1.2rem;
 
-                    img {
+                    .boximg {
                         height: 3.5rem;
                         width: 3.5rem;
                     }
 
-                    h3 {
+                    .boxhead {
                         font-weight: 600;
                         font-size: 2rem;
                         margin: 0;
                     }
 
-                    p {
+                    .boxpara {
                         font-weight: 400;
                         font-size: 0.8rem;
                     }
@@ -184,7 +181,7 @@
             .padCol {
 
                 padding-right: 1.5rem;
-                h3 {
+                .padhead {
                     font-weight: 600;
                     font-size: 38px;
                     line-height: 55px;
@@ -196,14 +193,14 @@
                     }
                 }
 
-                ul {
+                .padul {
                     margin: 0;
                     padding: 1rem;
                     color: $sg-black-50;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 0.8rem;
-                    li {
+                    .padli {
                         padding-bottom: 20px;
                     }
                 }
@@ -211,7 +208,7 @@
         }
         .meetCol2{
             padding-left:0.3rem;
-            img{
+            .colimg{
                 width:100% ;
                 height: auto;
             }

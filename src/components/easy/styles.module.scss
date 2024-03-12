@@ -10,14 +10,14 @@
         align-items: center;
         margin-bottom: 70px;
 
-        h2 {
+        .head {
             color: $sg-white;
             font-weight: 600;
             font-size: 40px;
             line-height: 55px;
         }
 
-        p {
+        .para {
             color: $sg-white;
             font-weight: 400;
             font-size: 18px;
@@ -33,7 +33,7 @@
             display: flex;
             justify-content: center;
         }
-        img {
+        .img {
             width: 97%;
             height: 97%;
         }

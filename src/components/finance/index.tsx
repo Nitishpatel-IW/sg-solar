@@ -23,13 +23,13 @@ const Finance: React.FC = () => {
                                 from <span>SGD 65 / month</span> ,
                                 with no upfront fees
                             </h3>
-                            <p>
+                            <p className={styles.para}>
                                {Data.para}
                             </p>
                             <button className={styles.btn}  onClick={() => setShowPopup(true)} >{Data.btn}</button>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
-                            <img src={Data.img} />
+                            <img className={styles.img} src={Data.img} />
                         </Col>
                     </Row>
                 </Col>

@@ -5,9 +5,9 @@ const Confident = () => {
     return (
         <div className={styles.main} id='confident'>
             <div className={styles.up}>
-                <h1>Become knowledgeable and <br /> <span>confident</span> about solar
+                <h1 className={styles.head1}>Become knowledgeable and <br /> <span>confident</span> about solar
                 </h1>
-                <p>
+                <p className={styles.para1}>
                     Find all the answers your need about solar with SG Solar Home.
                 </p>
                 <a href='https://medium.com/@sgsolarhome'>

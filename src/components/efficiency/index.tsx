@@ -17,7 +17,7 @@ const Efficiency: React.FC = () => {
               <h3 className={styles.head2}>
                 {Data.head2}
               </h3>
-              <p>
+              <p className={styles.para}>
                 {Data.para}
               </p>
             </Col>

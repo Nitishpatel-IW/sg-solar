@@ -12,7 +12,7 @@ import Faq from '../../components/faqComponent';
 import Eff from '../../components/efficiency';
 import Every from '../../components/everyone';
 import Easy from '../../components/easy';
-import Optimise from '../../components/optimise';
+import Optimise from '../../components/optimize';
 import Lowest from '../../components/compares';
 import Save from '../../components/savings';
 import Grid from '../../components/gridComponent';
@@ -30,38 +30,33 @@ const Home = () => {
     const btnText = 'Get Started';
     return (
         <div>
-
-            <header>
-                <Header />
-                <Navbar 
-                    bgColor={backgroundColor} 
-                    logoSrc={logoSrc} 
-                    fontColor={FontColor} 
-                    buttonColor={buttonColor} 
-                    buttonFontColor={buttonFontColor}
-                    btnText ={btnText} 
-                />
-            </header>
-            <main>
-                <Postal />
-                <Video />
-                <Carousal />
-                <Finance />
-                <Save />
-                <Grid />
-                <Prot />
-                <Lowest />
-                <Optimise />
-                <Expert />
-                <Scroll />
-                <Easy />
-                <Every />
-                <Ref />
-                <Scroll2 />
-                <Eff />
-                <Confident />
-                <Faq />
-            </main>
+            <Header />
+            <Navbar 
+                bgColor={backgroundColor} 
+                logoSrc={logoSrc} 
+                fontColor={FontColor} 
+                buttonColor={buttonColor} 
+                buttonFontColor={buttonFontColor}
+                btnText ={btnText} 
+            />
+            <Postal />
+            <Video />
+            <Carousal />
+            <Finance />
+            <Save />
+            <Grid />
+            <Prot />
+            <Lowest />
+            <Optimise />
+            <Expert />
+            <Scroll />
+            <Easy />
+            <Every />
+            <Ref />
+            <Scroll2 />
+            <Eff />
+            <Confident />
+            <Faq />
         </div>
     )
 }

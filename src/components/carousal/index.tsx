@@ -8,23 +8,18 @@ const Carousal = () => {
     const refs = useRef(new Array(7))
     const getOpacity = (i: number) => {
         if (!refs.current[i]) return 0;
-
         const rect = refs.current[i].getBoundingClientRect();
         const distanceFromTop = rect.top;
         const maxDistanceForFullOpacity = window.innerHeight * 0.4;
         const maxDistanceForOpacityDecrease = window.innerHeight * 0.6;
         const maxDistanceForOpacityZero = window.innerHeight * 0.1;
-
         let opacity = 1;
-
-        if (distanceFromTop > maxDistanceForOpacityDecrease) {
-            opacity = 0;
-        } else if (distanceFromTop > maxDistanceForFullOpacity) {
+        
+        if (distanceFromTop > maxDistanceForOpacityDecrease) {opacity = 0;} 
+        else if (distanceFromTop > maxDistanceForFullOpacity) {
             opacity = 1 - (distanceFromTop - maxDistanceForFullOpacity) / (maxDistanceForOpacityDecrease - maxDistanceForFullOpacity);
         }
-        if (distanceFromTop < maxDistanceForOpacityZero) {
-            opacity = 0;
-        }
+        if (distanceFromTop < maxDistanceForOpacityZero) {opacity = 0;}
         else if(distanceFromTop > maxDistanceForOpacityZero && distanceFromTop < maxDistanceForFullOpacity)
         {
             opacity = 1- (maxDistanceForFullOpacity -distanceFromTop) / (maxDistanceForOpacityDecrease - maxDistanceForFullOpacity);

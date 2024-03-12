@@ -88,3 +88,24 @@ export const Topic=[
         
     },
 ]
+
+export const Leftcol=[
+    {
+        topic:"General",
+    },
+    {
+        topic:"Installer",
+    },
+    {
+        topic:"Cost & Financing",
+    },
+    {
+        topic:"Maintenance",
+    },
+    {
+        topic:"Referral",
+    },
+    {
+        topic:"Renewable Energy Certificates",
+    },
+]

@@ -1,6 +1,6 @@
-import styles from './styles.module.scss';
 import React from 'react';
-import Call from '../../assets/icons/call.jpg';;
+import styles from './styles.module.scss';
+import Call from '../../assets/icons/call.jpg';
 import { Row, Col } from 'antd';
 import Accordian from './accordian';
 import { data } from './questionsBank';
@@ -17,14 +17,14 @@ const Faq: React.FC = () => {
                                 <span>Answers</span> to your solar
                                 energy questions
                             </h3>
-                            <p>
+                            <p className={styles.para1}>
                                 {data.para}
                             </p>
                             <div className={styles.filled}>
                                 <button className={styles.btn}>{data.btn}</button>
                                 <div style={{display:'flex', alignItems:"center"}}>
-                                    <img src={Call}/>
-                                    <p>Request a call back</p>
+                                    <img className={styles.img} src={Call}/>
+                                    <p className={styles.para2}>Request a call back</p>
                                 </div>
                             </div>
                         </Col>
