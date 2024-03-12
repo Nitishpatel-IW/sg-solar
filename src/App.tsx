@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.scss'
 import Home from "./pages/Home/Home";
-import Faq from "./pages/FAQ/Faq";
+import Faq from "./pages/faqq";
 import Foot from './components/footer/index'
 import Partner from "./pages/Partner/Partner";
 import Floatbutton from './components/floatingbutton/index'

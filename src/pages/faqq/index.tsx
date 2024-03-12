@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from '../../components/navbar/index'
-import Pagefaq from '../../components/faqPage/Index'
-import Logo from '../../assets/icons/logoWhite.jpg'
+import Navbar from '../../components/navbar/index';
+import Pagefaq from '../../components/faqPage/Index';
+import Logo from '../../assets/icons/logoWhite.jpg';
+
 const Faq = () => {
   const bgColor = '#1781e4';
   const logoSrc = Logo;
@@ -24,4 +24,4 @@ const Faq = () => {
   )
 }
 
-export default Faq
+export default Faq;
