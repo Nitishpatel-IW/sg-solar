@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.scss'
-import Home from "./pages/homie";
+import Home from "./pages/home";
 import Faq from "./pages/faq";
 import Foot from './components/footer/index'
 import Partner from "./pages/partners";
