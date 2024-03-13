@@ -13,22 +13,22 @@ interface NavbarProps {
   btnText?:string;
 }
 
-const Navbar: React.FC<NavbarProps> =({bgColor,logoSrc,fontColor,buttonColor,buttonFontColor,btnText,}) =>{
+const Navbar: React.FC<NavbarProps> =(props) =>{
   
   return (
-    <Row justify={'center'} className={styles.mainRow} style={{backgroundColor:bgColor}} >
+    <Row justify={'center'} className={styles.mainRow} style={{backgroundColor:props.bgColor}} >
       <Col span={18} className={styles.mainCol}>
         <Row className={styles.innerRow} justify={'space-between'}>
           <Col span={6} className={styles.logoSec}>
             <Link to='/'>
-              <img src={logoSrc} className={styles.img} />
+              <img src={props.logoSrc} className={styles.img} />
             </Link>
           </Col>
           <Col span={14} className={styles.item}>
-            <Menu className={styles.menu} mode="horizontal" items={menuItems} style={{ borderBottom: 'none', color:fontColor, textDecoration: 'none', fontSize: '0.6rem', width: '100%', justifyContent: 'end' }} />
+            <Menu className={styles.menu} mode="horizontal" items={menuItems} style={{ borderBottom: 'none', color:props.fontColor, textDecoration: 'none', fontSize: '0.6rem', width: '100%', justifyContent: 'end' }} />
           </Col>
           <Col span={3} className={styles.btnbox}>
-            <button className={styles.btn} style={{backgroundColor:buttonColor, color:buttonFontColor}}>{btnText}</button>
+            <button className={styles.btn} style={{backgroundColor:props.buttonColor, color:props.buttonFontColor}}>{props.btnText}</button>
           </Col>
         </Row>
       </Col>

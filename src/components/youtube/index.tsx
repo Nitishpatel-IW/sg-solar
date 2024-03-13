@@ -3,10 +3,11 @@ import Img from '../../assets/landscape/youtube.jpg';
 import styles from './styles.module.scss';
 import { FaTimes } from 'react-icons/fa';
 
-interface prop{
-  videolink?:string
+interface prop {
+  videolink?: string;
 }
-const Youtube: React.FC<prop> = ({videolink}) => {
+
+const Youtube: React.FC<prop> = ({ videolink }) => {
   const [showPlayer, setShowPlayer] = useState(false);
 
   const togglePlayer = () => {
@@ -14,14 +15,14 @@ const Youtube: React.FC<prop> = ({videolink}) => {
   };
 
   return (
-    <div className={styles.main}>
-      <img className={styles.img} src={Img} onClick={togglePlayer} />
+    <figure className={styles.main}>
+      <img className={styles.img} src={Img} alt="YouTube Thumbnail" onClick={togglePlayer} />
       {showPlayer && (
         <div className={styles.videoPopup} onClick={togglePlayer}>
-          <div className={styles.closeButton} onClick={togglePlayer}>
+          <button className={styles.closeButton} onClick={togglePlayer}>
             <FaTimes />
-          </div>
-          <div className={styles.videoContainer} >
+          </button>
+          <div className={styles.videoContainer}>
             <iframe
               title="YouTube Video Player"
               width="800"
@@ -33,7 +34,7 @@ const Youtube: React.FC<prop> = ({videolink}) => {
           </div>
         </div>
       )}
-    </div>
+    </figure>
   );
 };
 
