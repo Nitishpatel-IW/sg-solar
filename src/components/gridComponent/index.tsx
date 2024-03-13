@@ -5,15 +5,12 @@ import { cirle, payment, Police, thumb, tick } from './gridData';
 import PolicePopup from '../popup/police';
 import FinancePopup from '../popup/finance';
 
-// Constants or Enums
 const ModalType = {
   Police: 'showPolice',
   Finance: 'showFinance'
 };
-
 const Grid: React.FC = () => {
   const [showModal, setShowModal] = useState('');
-
   useEffect(() => {
     showModal ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto";
   }, [showModal]);

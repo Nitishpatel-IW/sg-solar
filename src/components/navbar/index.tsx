@@ -13,15 +13,8 @@ interface NavbarProps {
   btnText?:string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  bgColor,
-  logoSrc,
-  fontColor,
-  buttonColor,
-  buttonFontColor,
-  btnText,
-
-}) => {
+const Navbar: React.FC<NavbarProps> =({bgColor,logoSrc,fontColor,buttonColor,buttonFontColor,btnText,}) =>{
+  
   return (
     <Row justify={'center'} className={styles.mainRow} style={{backgroundColor:bgColor}} >
       <Col span={18} className={styles.mainCol}>

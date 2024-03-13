@@ -19,28 +19,21 @@ import Grid from '../../components/gridComponent';
 import Scroll from '../../components/scrollbox';
 import Scroll2 from '../../components/scrollbox2';
 import Logo from '../../assets/icons/logo.jpg';
-
+import variables from './variable';
 const Home = () => {
-
-    const backgroundColor = '#fff8f5';
-    const logoSrc = Logo;
-    const FontColor = '#fff';
-    const buttonColor = '#FB8500';
-    const buttonFontColor = '#fff';
-    const btnText = 'Get Started';
     return (
         <div>
             <Header />
             <Navbar 
-                bgColor={backgroundColor} 
-                logoSrc={logoSrc} 
-                fontColor={FontColor} 
-                buttonColor={buttonColor} 
-                buttonFontColor={buttonFontColor}
-                btnText ={btnText} 
+                bgColor={variables.backgroundColor} 
+                logoSrc={variables.logoSrc} 
+                fontColor={variables.FontColor} 
+                buttonColor={variables.buttonColor} 
+                buttonFontColor={variables.buttonFontColor}
+                btnText ={variables.btnText} 
             />
             <Postal />
-            <Video />
+            <Video videolink={variables.youtubelink}  />
             <Carousal />
             <Finance />
             <Save />
