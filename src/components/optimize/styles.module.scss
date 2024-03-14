@@ -44,10 +44,10 @@
                     display: flex;
                     margin-top: 50px;
                     column-gap: 20px;
-                    height: 2.5rem;
+                    height: auto;
                     .add {
                         border-radius: 100px;
-                        border-color: $sg-black-50;
+                        border:2px solid $sg-black-25;
                         font-size: 16px;
                         padding: 0rem 1rem;
                         width: 15rem;

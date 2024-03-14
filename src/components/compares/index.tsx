@@ -28,8 +28,7 @@ const Compare = () => {
                             <p className={styles.para}>
                                {data.para}
                             </p>
-                            {/* onClick={()=>setShowPopup(true)} */}
-                            <CustomBtn >{data.btn}</CustomBtn>
+                            <CustomBtn onClick={()=>setShowPopup(true)} >{data.btn}</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img src={data.img} />

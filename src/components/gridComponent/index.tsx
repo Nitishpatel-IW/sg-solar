@@ -32,8 +32,7 @@ const Grid: React.FC = () => {
           <h3>{Police.subhead}</h3>
           <p>{Police.para}</p>
           <p>{Police.tc}</p>
-          {/* onClick={() => toggleModal(ModalType.Police)} */}
-          <CustomBtn>Learn more</CustomBtn>
+          <CustomBtn  bgColor="#fff" textColor="#FB8500" onClick={() => toggleModal(ModalType.Police)}>Learn more</CustomBtn>
         </Col>
         <Col className={styles.rightCol} span={12}>
           <Row className={styles.subRow}>
@@ -49,8 +48,7 @@ const Grid: React.FC = () => {
                 <img src={payment.img} alt="Payment Icon" />
               </div>
               <p>{payment.para}</p>
-              {/* onClick={() => toggleModal(ModalType.Finance)} */}
-              <CustomBtn >Learn more</CustomBtn>
+              <CustomBtn onClick={() => toggleModal(ModalType.Finance)}>Learn more</CustomBtn>
             </Col>
           </Row >
           <Row className={styles.subRowtwo}>

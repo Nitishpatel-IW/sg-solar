@@ -27,8 +27,7 @@ const Finance: React.FC = () => {
                             <p className={styles.para}>
                                {Data.para}
                             </p>
-                            {/* onClick={() => setShowPopup(true)} */}
-                            <CustomBtn>{Data.btn}</CustomBtn>
+                            <CustomBtn onClick={() => setShowPopup(true)}>{Data.btn}</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img className={styles.img} src={Data.img} />

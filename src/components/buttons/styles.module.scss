@@ -5,8 +5,9 @@
     background: linear-gradient(135deg, #ff932e, #e57003);
     color: $sg-white;
     border: none;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     padding: 14px 24px;
     border-radius: 100px;
+    white-space: nowrap;
 }
