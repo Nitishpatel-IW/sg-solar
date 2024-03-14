@@ -4,6 +4,7 @@ import { Row, Col } from 'antd'
 import styles from './styles.module.scss'
 import { Data } from './content';
 import FinancePopup from '../popup/finance'
+import CustomBtn from '../buttons/orangeButton';
 
 const Finance: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false);
@@ -26,7 +27,8 @@ const Finance: React.FC = () => {
                             <p className={styles.para}>
                                {Data.para}
                             </p>
-                            <button className={styles.btn}  onClick={() => setShowPopup(true)} >{Data.btn}</button>
+                            {/* onClick={() => setShowPopup(true)} */}
+                            <CustomBtn>{Data.btn}</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img className={styles.img} src={Data.img} />

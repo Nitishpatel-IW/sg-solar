@@ -4,6 +4,7 @@ import Logo from '../../assets/icons/logo.jpg';
 import { EnvironmentFilled } from '@ant-design/icons';
 import Panel from '../../assets/potrait/panel1.jpg';
 import Cancel from '../../assets/icons/cancel.jpg';
+import CustomBtn from '../buttons/orangeButton';
 
 interface PopupProps {
     closeModel: () => void;
@@ -29,7 +30,7 @@ const Finance = ({ closeModel }: PopupProps) => {
                 </p>
                 <div className={styles.popInput}>
                     <Input className={styles.popAdd} placeholder='Type your postcode or address' prefix={<EnvironmentFilled />} />
-                    <button className={styles.popBtn}>Get Started</button>
+                    <CustomBtn>Get Started</CustomBtn>
                 </div>
 
                 <Row justify={'space-between'} align={'bottom'}>

@@ -4,6 +4,7 @@ import { Col, Row } from 'antd';
 import { cirle, payment, Police, thumb, tick } from './gridData';
 import PolicePopup from '../popup/police';
 import FinancePopup from '../popup/finance';
+import CustomBtn from '../buttons/orangeButton';
 
 const ModalType = {
   Police: 'showPolice',
@@ -31,7 +32,8 @@ const Grid: React.FC = () => {
           <h3>{Police.subhead}</h3>
           <p>{Police.para}</p>
           <p>{Police.tc}</p>
-          <button className={styles.polBtn} onClick={() => toggleModal(ModalType.Police)}>Learn more</button>
+          {/* onClick={() => toggleModal(ModalType.Police)} */}
+          <CustomBtn>Learn more</CustomBtn>
         </Col>
         <Col className={styles.rightCol} span={12}>
           <Row className={styles.subRow}>
@@ -47,7 +49,8 @@ const Grid: React.FC = () => {
                 <img src={payment.img} alt="Payment Icon" />
               </div>
               <p>{payment.para}</p>
-              <button className={styles.button} onClick={() => toggleModal(ModalType.Finance)}>Learn more</button>
+              {/* onClick={() => toggleModal(ModalType.Finance)} */}
+              <CustomBtn >Learn more</CustomBtn>
             </Col>
           </Row >
           <Row className={styles.subRowtwo}>

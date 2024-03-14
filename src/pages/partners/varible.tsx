@@ -1,6 +1,6 @@
 import Logo from '../../assets/icons/logoWhite.jpg';
 const variables = {
-    backgroundColor: '#FB8500',
+    bgColor: '#FB8500',
     logoSrc: Logo,
     rightContainerFontColor: '#fff',
     buttonColor: '#fff',

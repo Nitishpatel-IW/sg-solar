@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss';
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
+import CustomBtn from '../buttons/orangeButton';
 
 const Postal: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Postal: React.FC = () => {
           <Input className={styles.add} placeholder='Type your postcode or address' prefix={<EnvironmentFilled />} />
         </div>
         <div >
-          <button className={styles.btn}>Get Started With Solar</button>
+          <CustomBtn>Get Started With Solar</CustomBtn>
         </div>
       </div>
     </div>

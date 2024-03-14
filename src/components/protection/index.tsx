@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import { Data } from './content';
 import PolicePopup from '../popup/police'
+import CustomBtn from '../buttons/orangeButton';
 
 
 const Protection: React.FC = () => {
@@ -25,7 +26,8 @@ const Protection: React.FC = () => {
               <p>
                 {Data.para}
               </p>
-              <button className={styles.btn} onClick={()=>setShowPopup(true)}>{Data.btn}</button>
+              {/* onClick={()=>setShowPopup(true)} */}
+              <CustomBtn >{Data.btn}</CustomBtn>
             </Col>
             <Col className={styles.meetCol2} span={12}>
               <img src={Data.img} />

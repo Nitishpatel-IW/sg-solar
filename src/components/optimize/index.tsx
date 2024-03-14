@@ -3,6 +3,7 @@ import { Row, Col } from 'antd';
 import { EnvironmentFilled } from '@ant-design/icons';
 import { Input } from 'antd';
 import Img from '../../assets/potrait/optimise.jpg';
+import CustomBtn from '../buttons/orangeButton';
 
 const Optimise = () => {
     return (
@@ -20,7 +21,7 @@ const Optimise = () => {
                             </p>
                             <div className={styles.filled}>
                                 <Input className={styles.add} placeholder='Type your postcode or address' prefix={<EnvironmentFilled />} />
-                                <button className={styles.btn}>Get started</button>
+                                <CustomBtn>Get started</CustomBtn>
                             </div>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>

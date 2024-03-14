@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import { Data } from './content';
 import ExpertPopup from '../popup/experts'
+import CustomBtn from '../buttons/orangeButton';
 
 const Expert: React.FC = () => {
 
@@ -25,7 +26,8 @@ const Expert: React.FC = () => {
                             <p className={styles.para}>
                                 {Data.para}
                             </p>
-                            <button className={styles.btn} onClick={()=> setShowPopup(true)}>{Data.btn}</button>
+                            {/* onClick={()=> setShowPopup(true)} */}
+                            <CustomBtn >{Data.btn}</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img className={styles.img} src={Data.img} />

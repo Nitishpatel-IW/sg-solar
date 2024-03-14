@@ -1,15 +1,5 @@
 @import '../../styles/varibles';
 
-@mixin button-styles($background:linear-gradient(135deg, #ff932e, #e57003), $color:$sg-white, $border:none ) {
-    background: $background;
-    color: $color;
-    margin: 6px 0;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 24px;
-    border-radius: 100px;
-    border: $border;
-}
 .main {
     display: flex;
     flex-direction: column;
@@ -49,10 +39,6 @@
                 height: 100%;
                 object-fit: contain;
             }
-
-            .polBtn {
-                @include button-styles($sg-white, $sg-orange, none);
-            }
         }
 
         .rightCol {
@@ -91,10 +77,6 @@
                         img {
                             object-fit: contain;
                         }
-                    }
-
-                    button {
-                        @include button-styles;
                     }
                 }
             }

@@ -5,14 +5,7 @@ import variables from './varible';
 const Partner = () => {
   return (
     <div>
-        <Navbar 
-                bgColor={variables.backgroundColor} 
-                logoSrc={variables.logoSrc} 
-                fontColor={variables.rightContainerFontColor} 
-                buttonColor={variables.buttonColor} 
-                buttonFontColor={variables.buttonFontColor} 
-                btnText={variables.btnText}
-            />
+        <Navbar {...variables}/>
         <Installer/>
     </div>
   )

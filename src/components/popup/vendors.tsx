@@ -4,6 +4,7 @@ import Logo from '../../assets/icons/logo.jpg'
 import { EnvironmentFilled } from '@ant-design/icons';
 import Cancel from '../../assets/icons/cancel.jpg';
 import Comp from '../../assets/potrait/compareImg.jpg';
+import CustomBtn from '../buttons/orangeButton';
 
 
 interface PopupProps {
@@ -30,7 +31,7 @@ const Vendors = ({ closeModel }: PopupProps) => {
                         </p>
                         <div className={styles.popInput}>
                             <Input className={styles.popAdd} placeholder='Type your postcode or address' prefix={<EnvironmentFilled />} />
-                            <button className={styles.popBtn}>Get Started</button>
+                            <CustomBtn>Get Started</CustomBtn>
                         </div>
                     </Col>
                 </Row>

@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 import { Box, Market, Meet, data, list } from './content';
 import { Col, Row } from 'antd';
 import Img from '../../assets/potrait/solvendor..jpg';
-
+import CustomBtn from '../buttons/orangeButton';
 const Installer = () => {
     return (
         <div className={styles.main}>
@@ -52,7 +52,7 @@ const Installer = () => {
                             <p className={styles.marketpara}>{Market.para}</p>
                         </Col>
                         <Col className={styles.upColbtn} span={6}>
-                            <button>Join Our Partner Network</button>
+                            <CustomBtn>Join Our Partner Network</CustomBtn>
                         </Col>
                     </Row>
                 </Col>

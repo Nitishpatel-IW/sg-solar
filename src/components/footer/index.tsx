@@ -4,6 +4,7 @@ import Fb from '../../assets/icons/fb.jpg';
 import Ib from '../../assets/icons/insta.jpg';
 import In from '../../assets/icons/lnkdn.jpg';
 import { Row, Col } from 'antd';
+import CustomBtn from '../buttons/orangeButton';
 
 const Footer = () => {
     return (
@@ -12,7 +13,7 @@ const Footer = () => {
                 <Row className={styles.first} justify="center">
                     <Col className={styles.firstCol} span={18}>
                         <h2 className={styles.head1}>“ Powering homes and businesses in Singapore with the sun,<span>SG Solar Home.</span> ”</h2>
-                        <button className={styles.btn}>Get started with solar today</button>
+                        <CustomBtn>Get started with solar today</CustomBtn>
                     </Col>
                 </Row>
                 <Row className={styles.second} justify={'center'}>

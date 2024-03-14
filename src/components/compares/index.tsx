@@ -3,6 +3,7 @@ import styles from './styles.module.scss'
 import { Row, Col } from 'antd'
 import VendorPopup from '../popup/vendors'
 import { data } from './content';
+import CustomBtn from '../buttons/orangeButton';
 
 
 const Compare = () => {
@@ -27,7 +28,8 @@ const Compare = () => {
                             <p className={styles.para}>
                                {data.para}
                             </p>
-                            <button className={styles.btn} onClick={()=>setShowPopup(true)}>{data.btn}</button>
+                            {/* onClick={()=>setShowPopup(true)} */}
+                            <CustomBtn >{data.btn}</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img src={data.img} />

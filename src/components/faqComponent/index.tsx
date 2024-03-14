@@ -4,6 +4,7 @@ import Call from '../../assets/icons/call.jpg';
 import { Row, Col } from 'antd';
 import Accordian from './accordian';
 import { data } from './questionsBank';
+import CustomBtn from '../buttons/orangeButton';
 
 const Faq: React.FC = () => {
     return (
@@ -21,7 +22,7 @@ const Faq: React.FC = () => {
                                 {data.para}
                             </p>
                             <div className={styles.filled}>
-                                <button className={styles.btn}>{data.btn}</button>
+                                <CustomBtn>{data.btn}</CustomBtn>
                                 <div style={{display:'flex', alignItems:"center"}}>
                                     <img className={styles.img} src={Call}/>
                                     <p className={styles.para2}>Request a call back</p>

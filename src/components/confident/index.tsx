@@ -1,5 +1,6 @@
 import styles from './styles.module.scss';
 import Slider from './slider';
+import CustomBtn from '../buttons/orangeButton';
 
 const Confident = () => {
     return (
@@ -11,7 +12,7 @@ const Confident = () => {
                     Find all the answers your need about solar with SG Solar Home.
                 </p>
                 <a href='https://medium.com/@sgsolarhome'>
-                    <button className={styles.btn}>View All Articles</button>
+                    <CustomBtn>View All Articles</CustomBtn>
                 </a>
             </div>
             <Slider />

@@ -1,6 +1,7 @@
 import { Row, Col } from 'antd';
 import styles from './styles.module.scss';
 import { Gallery } from './content';
+import CustomBtn from '../buttons/orangeButton';
 
 const Every = () => {
     return (
@@ -19,7 +20,7 @@ const Every = () => {
                                 <img className={styles.img} src={g.img} />
                                 <h2 className={styles.head3}>{g.head}</h2>
                                 <p className={styles.para}>{g.para}</p>
-                                {g.btn && <button>{g.btn}</button>}
+                                {g.btn && <CustomBtn>{g.btn}</CustomBtn>}
                             </Col>
                         ))}
                     </Row>

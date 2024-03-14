@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import Logo from '../../assets/icons/logo.jpg';
 import Cancel from '../../assets/icons/cancel.jpg';
 import Home from '../../assets/potrait/homevendorImg.jpg';
+import CustomBtn from '../buttons/orangeButton';
 
 interface PopupProps {
     closeModel: () => void;
@@ -28,7 +29,7 @@ const Expert = ({ closeModel }: PopupProps) => {
                             With our extensive network of pre-screened, high-quality solar installers, you can be confident that you’ll receive the best possible service and the highest quality solar system installation. We carefully vet each of our installers to ensure that they are licensed, certified and experienced professionals with a proven track record of delivering top customer service.
                         </p>
                         <div className={styles.popInput}>
-                            <button className={styles.popBtn}>Get started with solar now</button>
+                            <CustomBtn>Get started with solar now</CustomBtn>
                         </div>
                     </Col>
                 </Row>

@@ -1,6 +1,7 @@
 import styles from './styles.module.scss';
 import { Row, Col } from 'antd';
 import Img from '../../assets/potrait/family.jpg';
+import CustomBtn from '../buttons/orangeButton';
 
 const Save = () => {
     return (
@@ -17,7 +18,7 @@ const Save = () => {
                             <p>
                                 Are you tired of skyrocketing electricity bills? With Singapore's rising electricity tariffs, switching to solar has become a no-brainer. Plus, with the current incentives in place, installing solar panels is more affordable than ever. Not only is solar the cheapest source of energy compared to traditional utilities, but it also protects you from unpredictable price hikes. With instant savings on your energy bills from day one and financing options available, solar can pay for itself straight away. Take control of your energy costs and invest in a brighter future with solar. Contact us today to learn more about the financial benefits of solar and start saving!
                             </p>
-                            <button className={styles.btn}>Calculate your savings</button>
+                            <CustomBtn>Calculate your savings</CustomBtn>
                         </Col>
                         <Col className={styles.meetCol2} span={12}>
                             <img src={Img} />
