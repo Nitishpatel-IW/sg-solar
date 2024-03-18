@@ -7,15 +7,17 @@ interface CustomBtnProps {
   bgColor?: string;
   textColor?: string;
   border?: string;
+  padding?: string;
   onClick?: () => void;
 }
-const CustomBtn:React.FC<CustomBtnProps> = ({ children, fontsize ,bgColor, textColor, border, onClick = () => {} , }) => {
+const CustomBtn:React.FC<CustomBtnProps> = ({ children, fontsize ,bgColor, textColor, border, padding, onClick = () => {} , }) => {
 
   const btnStyle = {
     fontSize: fontsize,
     background: bgColor,
     color: textColor,
     border: border,
+    padding: padding,
   };
 
   return (
