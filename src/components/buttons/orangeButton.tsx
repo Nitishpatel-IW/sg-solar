@@ -8,9 +8,10 @@ interface CustomBtnProps {
   textColor?: string;
   border?: string;
   padding?: string;
+  type?:string;
   onClick?: () => void;
 }
-const CustomBtn:React.FC<CustomBtnProps> = ({ children, fontsize ,bgColor, textColor, border, padding, onClick = () => {} , }) => {
+const CustomBtn:React.FC<CustomBtnProps> = ({ children, fontsize ,bgColor, textColor, border, padding, type, onClick = () => {} , }) => {
 
   const btnStyle = {
     fontSize: fontsize,
@@ -18,6 +19,7 @@ const CustomBtn:React.FC<CustomBtnProps> = ({ children, fontsize ,bgColor, textC
     color: textColor,
     border: border,
     padding: padding,
+    type: type,
   };
 
   return (
