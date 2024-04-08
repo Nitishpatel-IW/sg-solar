@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
       const handleClick = () => {
             localStorage.removeItem('token')
-            navigate('/login')
+            navigate('/')
       }
       return (
             <header className={styles.main}>

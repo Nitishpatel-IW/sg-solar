@@ -55,7 +55,7 @@ app.get('/register', async (req, res) => {
     }
 })
 
-app.post('/login', async (req, res) => {
+app.post('/', async (req, res) => {
     try {
         const { email, password } = req.body
         const user = await User.findOne({ email})
@@ -67,7 +67,7 @@ app.post('/login', async (req, res) => {
             return res.status(401).json({ error: 'Invalid password' })
         }
         const token = jwt.sign({ userId: user._id }, SECRET_KEY, { expiresIn: '1hr' })
-        res.json({ message: 'Login successful' })
+        res.json({ message: 'Login successful',token })
     } catch (error) {
         res.status(500).json({ error: 'Error logging in' })
     }

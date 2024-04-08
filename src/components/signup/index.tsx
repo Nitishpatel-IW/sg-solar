@@ -36,7 +36,7 @@ const Signup = () => {
             setEmail('')
             setPassword('')
             fetchUsers();
-            navigate('/login')
+            navigate('/')
         })
         .catch((error) => {
             console.log('Unable to register user')
@@ -71,7 +71,7 @@ const Signup = () => {
                         </div>
                     </form>
                     <p>Already have account?</p>
-                    <Link to="/login">
+                    <Link to="/">
                         <CustomBtn>Login Securely</CustomBtn>
                     </Link>
                 </section>

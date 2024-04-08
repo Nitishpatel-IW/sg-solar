@@ -29,7 +29,7 @@ const Login = () => {
     const handleLogin = async (event: any) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3001/login', { email, password });
+            const response = await axios.post('http://localhost:3001/', { email, password });
             const token = response.data.token;
         
             alert('Login successful');

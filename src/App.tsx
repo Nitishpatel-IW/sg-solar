@@ -12,17 +12,15 @@ import Localstorage from "./practice/localstorage";
 import Sessionstorage from "./practice/sessionstorage";
 
 function App() {
-
-  const isUserSignedin = !!localStorage.getItem('token')
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          {isUserSignedin && <Route path="/home" element={<Home />} />}
-          {isUserSignedin && <Route path="/faq" element={<Faq />} />}
-          {isUserSignedin && <Route path="/partner" element={<Partner />} />}
+          <Route path="/home" element={<Home />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/partner" element={<Partner />} />
         </Routes>
       <Foot />
       <Floatbutton />

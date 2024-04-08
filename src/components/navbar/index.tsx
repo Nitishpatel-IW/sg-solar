@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       <Col span={18} className={styles.mainCol}>
         <Row className={styles.innerRow} justify={'space-between'}>
           <Col span={6} className={styles.logoSec}>
-            <Link to='/'>
+            <Link to='/home'>
               <img src={props.logoSrc} className={styles.img} />
             </Link>
           </Col>

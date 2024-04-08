@@ -14,7 +14,7 @@ interface MenuItem {
     {
       key: "work",
       label: (
-        <Link to="/#howWework">
+        <Link to="/home/#howWework">
           How we Work
         </Link>
       ),
@@ -38,7 +38,7 @@ interface MenuItem {
         {
           key: "articles",
           label: (
-            <Link to="/#confident">
+            <Link to="/home/#confident">
               Articles
             </Link>
           ),
@@ -74,7 +74,7 @@ interface MenuItem {
         {
           key: "home",
           label: (
-            <Link to="/#easy">
+            <Link to="/home/#easy">
               SG solar Homes
             </Link>
           ),
@@ -82,7 +82,7 @@ interface MenuItem {
         {
           key: "projects",
           label: (
-            <Link to="#projects">
+            <Link to="/home/#projects">
               Our Projects
             </Link>
           ),

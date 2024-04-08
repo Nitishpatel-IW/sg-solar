@@ -19,8 +19,17 @@ import Grid from '../../components/gridComponent';
 import Scroll from '../../components/scrollbox';
 import Scroll2 from '../../components/scrollbox2';
 import variables from './variable';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if(!localStorage.getItem('token')){
+        navigate('/');
+    }
+  },[])
     return (
         <div>
             <Header />
